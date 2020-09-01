@@ -12,6 +12,7 @@ p {
   margin-top: 0;
   margin-bottom: 1rem;
 }
+
 h1,
 h2,
 h3,
@@ -49,13 +50,52 @@ small,
 .text_small {
   font-size: 0.889em;
 }
+
 ol {
   li {
     list-style-type: decimal;
   }
 }
+
 ul {
   li {
     list-style-type: disc;
+  }
+}
+
+
+pre {
+  padding: 1rem;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f6f8fa;
+  border-radius: 6px;
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+
+  code {
+    display: inline;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    line-height: inherit;
+    word-wrap: normal;
+    background-color: initial;
+    border: 0;
+  }
+}
+
+blockquote {
+  background-color: #f6f8fa;
+  font-style: italic;
+  padding: 0 1em;
+  color: #6a737d;
+  border-left: .25em solid #dfe2e5;
+  margin: 0;
+
+  p {
+    font-size: 1rem;
+    padding: 0.25rem 0;
+
   }
 }
