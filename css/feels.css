@@ -343,8 +343,8 @@ img {
   opacity: 0.2; }
 
 .starrating {
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -ms-flex-align: center;
   align-items: center;
   -ms-flex-pack: center;
@@ -1803,7 +1803,7 @@ footer {
           border-bottom: 2px solid rgba(0, 0, 0, 0.12); } }
 
 body.article {
-  background: #ffff; }
+  background: #fff; }
 
 #toolsanchor {
   width: 100%;
