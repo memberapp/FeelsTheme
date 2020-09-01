@@ -55,6 +55,7 @@
   margin-bottom: 1.5rem;
   overflow: hidden;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+
   // &:hover {
   //   box-shadow: 0 1px 3px $text-divider, 0 1px 2px rgba(0, 0, 0, 0.24);
   // }
@@ -64,7 +65,7 @@
     border-radius: 0;
     border-left: 0;
     border-right: 0;
-    border-bottom: 2px solid $text-divider;
+    border-bottom: 1px solid $text-divider;
   }
 }
 
@@ -95,9 +96,11 @@
   border: 1px solid darken($theme-secondary, 10);
   background: $theme-secondary;
   padding: 0.5rem 1.5rem;
+
   &:hover {
     background: darken($theme-secondary, 10);
   }
+
   &:disabled {
     opacity: 0.65;
   }
@@ -114,9 +117,11 @@
   border: 1px solid $theme-secondary;
   background: transparent;
   padding: 0.5rem 1.5rem;
+
   &:hover {
     background: lighten($theme-secondary, 50);
   }
+
   &:disabled {
     opacity: 0.65;
   }
