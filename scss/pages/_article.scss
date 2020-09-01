@@ -1,3 +1,16 @@
 body.article {
-    background: #fff;
+    background: $white;
+
+    #thread {
+        .itemlist {
+            .fatitem {
+                border: none;
+
+                .votelinks {
+                    background: $white;
+                }
+            }
+        }
+    }
+
 }
