@@ -1402,22 +1402,23 @@ header {
 footer {
   background-color: #e0e0e0;
   padding-top: 4rem;
-  margin-top: 6rem;
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto; }
-  @media (min-width: 1025px) {
-    footer {
-      max-width: 1140px; } }
+  margin-top: 6rem; }
+  footer .content {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto; }
+    @media (min-width: 1025px) {
+      footer .content {
+        max-width: 1140px; } }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-  footer {
+  footer .content {
     max-width: 960px; } }
-  @media (max-width: 768px) {
-    footer {
-      max-width: 540px; } }
+    @media (max-width: 768px) {
+      footer .content {
+        max-width: 540px; } }
   footer #developmentversion {
     font-size: 1rem;
     text-align: center;
@@ -1806,7 +1807,8 @@ footer {
 body.article {
   background: white; }
   body.article #thread .itemlist .fatitem {
-    border: none; }
+    border: none;
+    font-size: 1.125rem; }
     body.article #thread .itemlist .fatitem .votelinks {
       background: white; }
 

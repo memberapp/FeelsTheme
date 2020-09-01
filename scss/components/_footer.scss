@@ -2,9 +2,13 @@ footer {
   background-color: #e0e0e0;
   padding-top: 4rem;
   margin-top: 6rem;
-  @include container;
+
+  .content {
+    @include container;
+  }
 
   #developmentversion {
+
     font-size: 1rem;
     text-align: center;
     color: $theme-danger;
@@ -21,6 +25,7 @@ footer {
   }
 
   .footerlinks {
+
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
