@@ -44,6 +44,10 @@
         font-weight: bold;
       }
 
+      .highlight {
+        background: rgba(77, 200, 70, .06);
+      }
+
       .reply {
         margin-bottom: $base-padding;
 
@@ -52,7 +56,7 @@
           flex-direction: row;
 
           .votelinks {
-            background: $white;
+            background: transparent;
             position: relative;
 
             &:before {
