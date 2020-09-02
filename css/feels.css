@@ -1457,11 +1457,13 @@ footer {
     font-size: 1rem;
     text-align: center;
     color: #c1292e;
-    background: #e99a9c;
+    background: #f2c4c5;
     padding: 1rem;
     margin-bottom: 2rem;
     border-radius: 0.25rem;
-    border: 1px solid #972024; }
+    border: 1px solid #c1292e; }
+    footer #developmentversion br {
+      display: none; }
   footer hr {
     display: none; }
   footer .footerlinks {
