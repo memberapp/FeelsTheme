@@ -27,6 +27,6 @@ Open a new termianl and run the following command
     npm i
     npx gulp watch
 
-Edit the base theme by navigating to `/src/feels`
+Edit the base theme by navigating to `./src/feels`
 
-The final css file will be imported to `/memberdev/css`
+The final css file will be imported to `../memberdev/css`
