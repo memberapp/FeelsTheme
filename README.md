@@ -1,5 +1,7 @@
 # FeelsTheme (Member)
 
+A custom, responsive and modern theme for https://member.cash created by @Feels using SCSS
+
 ## Member
 
 Member is a Bitcoin Cash blockchain browser. It reads and allows users to create actions in the Memo/Member protocol.
