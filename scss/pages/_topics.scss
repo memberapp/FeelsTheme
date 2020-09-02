@@ -2,14 +2,28 @@
   br {
     display: none;
   }
+
   @include container-thin;
+
   table {
     @include card;
     width: 100%;
     padding: $base-padding * 2;
+
+    .filterprovider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      a[href^="javascript:;"] {}
+
+      a[href^="#member?"] {}
+    }
+
     tbody {
       tr {
         td {
+
           a[href^="#modmorelink"],
           a[href^="javascript:;"] {
             @include btn;

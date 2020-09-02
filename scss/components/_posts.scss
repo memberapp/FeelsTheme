@@ -149,7 +149,7 @@ img {
         a[href]:not([href^="#thread?"]) {
           color: $theme-secondary;
           // padding-bottom: 1rem;
-          display: block;
+          // display: block;
 
           &:hover {
             color: #354f78;
