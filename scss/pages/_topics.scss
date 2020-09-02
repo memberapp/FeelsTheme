@@ -13,11 +13,41 @@
     .filterprovider {
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+      margin-bottom: 1rem;
 
-      a[href^="javascript:;"] {}
 
-      a[href^="#member?"] {}
+      a[id^="designate"] {
+        width: inherit;
+        width: 100%;
+        text-align: center;
+        background: #4dc846;
+        border: 1px solid darken($theme-primary, 10);
+
+        &:hover {
+          background: darken($theme-primary, 10);
+          border: 1px solid darken($theme-primary, 20);
+        }
+      }
+
+
+
+      .mib {
+        color: transparent;
+
+        a[href^="#member?"] {}
+      }
+
+      a[href^="javascript:;"] {
+        width: auto;
+      }
+
+
+    }
+
+    .tltopicname {
+      text-align: left;
     }
 
     tbody {
@@ -36,6 +66,22 @@
             font-weight: bold;
           }
         }
+
+        // &[id^="modmore"] {
+        //   display: flex;
+        //   width: 100%;
+
+        //   .filterprovider {
+        //     &:first-of-type {
+        //       margin-right: 1rem;
+        //     }
+
+        //     &:only-child {
+        //       margin-right: 0;
+        //       ;
+        //     }
+        //   }
+        // }
       }
     }
   }

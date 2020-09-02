@@ -4,16 +4,19 @@ table {
   margin-bottom: 1rem;
   display: table;
   width: 100%;
+
   @include media("<desktop") {
     overflow-x: auto;
   }
 
   thead {
     tr {
-      th {
+
+      th,
+      td {
         border-bottom: 1px solid rgba(0, 0, 0, 0.34);
         background: $text-divider;
-        padding: 0 0.5rem;
+        padding: 0.5rem;
         font-weight: bold;
       }
     }
@@ -25,6 +28,7 @@ table {
         border-bottom: 1px solid $text-divider;
         padding: 0.5rem;
       }
+
       &:nth-child(even) {
         background: lighten($theme-secondary, 50);
       }
