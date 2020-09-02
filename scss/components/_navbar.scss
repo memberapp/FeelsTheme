@@ -10,6 +10,7 @@ header {
 
   .pagetop {
     min-height: 61px;
+
     nav {
       min-height: 61px;
       display: flex;
@@ -29,11 +30,9 @@ header {
         width: 2rem;
         height: 100%;
         z-index: 2;
-        background: linear-gradient(
-          270deg,
-          $white 0%,
-          rgba(255, 255, 255, 0) 100%
-        );
+        background: linear-gradient(270deg,
+            $white 0%,
+            rgba(255, 255, 255, 0) 100%);
       }
 
       .memberlogo {
@@ -41,8 +40,11 @@ header {
         display: flex;
         align-items: center;
         height: auto;
+        user-select: none;
+
         a {
           width: max-content;
+
           img {
             margin-top: 0;
             outline: none;
@@ -59,6 +61,7 @@ header {
 
       .membertext {
         display: none;
+
         @include media(">desktop") {
           display: flex;
           align-items: center;
@@ -72,11 +75,14 @@ header {
 
         a {
           color: $theme-primary;
+          user-select: none;
         }
       }
+
       .membertext,
       .memberlogo {
         transition: all 0.15s ease-in-out;
+
         &:hover {
           opacity: 0.8;
         }
@@ -115,6 +121,7 @@ header {
             padding: 0 0.5rem;
           }
         }
+
         a {
           &:hover {
             // background-color: rgba(0, 0, 0, 0.06);
@@ -126,6 +133,7 @@ header {
         #loggedin {
           height: 100%;
         }
+
         #loggedout {
           padding: 0;
           display: flex;
@@ -144,10 +152,12 @@ header {
             font-weight: bold;
             padding: 0;
             margin-right: 0.5rem;
+
             .sats {
               padding: 0;
             }
           }
+
           #mapbutton {
             margin-right: 0.75rem;
           }
@@ -190,11 +200,13 @@ header {
       #privatemessagesbutton {
         position: relative;
       }
+
       .headerbuttons {
         @include media(">desktop") {
           margin-right: auto;
         }
       }
+
       .btn {
         // margin-right: 0.75rem;
       }
@@ -212,6 +224,7 @@ header {
           &:first-of-type {
             margin-left: 0.75rem;
           }
+
           &:last-of-type {
             margin-right: 3rem;
           }
