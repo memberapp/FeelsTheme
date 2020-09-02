@@ -1,6 +1,7 @@
 body.article {
     background: $white;
 
+
     header,
     footer,
     #lowfundswarning {
@@ -12,6 +13,7 @@ body.article {
             .fatitem {
                 border: none;
                 font-size: 1.25rem;
+                font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
 
                 .votelinks {
                     background: $white;
