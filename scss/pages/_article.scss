@@ -30,6 +30,44 @@ body.article {
                         display: none;
                     }
                 }
+
+                pre {
+                    padding: 1rem;
+                    overflow: auto;
+                    font-size: 85%;
+                    line-height: 1.45;
+                    background-color: #f6f8fa;
+                    border-radius: 6px;
+                    font-size: 1.25rem;
+                    font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+
+                    code {
+                        display: inline;
+                        padding: 0;
+                        margin: 0;
+                        overflow: visible;
+                        line-height: inherit;
+                        word-wrap: normal;
+                        background-color: initial;
+                        border: 0;
+                    }
+                }
+
+                blockquote {
+                    background-color: #f6f8fa;
+                    font-style: italic;
+                    padding: 0 1em;
+                    color: #6a737d;
+                    border-left: .25em solid #dfe2e5;
+                    margin: 0;
+
+                    p {
+                        font-size: 1.25rem;
+                        padding: 0.25rem 0;
+
+                    }
+                }
+
             }
         }
     }
