@@ -180,10 +180,15 @@ img {
         margin-bottom: 0.25rem;
         border-bottom: 1px solid $text-divider;
         padding-bottom: 0.25rem;
-        display: inline-block;
+        display: flex;
+        flex-wrap: wrap;
 
         a {
           display: inline-block;
+        }
+
+        .age {
+          margin: 0 0.25rem;
         }
       }
     }
