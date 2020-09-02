@@ -2,6 +2,7 @@ a {
   text-decoration: none;
   transition: all 0.15s ease-in-out;
   color: $theme-secondary;
+
   &:hover {
     color: darken($theme-secondary, 10);
   }
@@ -50,9 +51,11 @@ img {
     text-align: center;
     display: block;
   }
+
   .rotate180 {
     transform: rotate(180deg);
   }
+
   .votearrow,
   .votearrowactivated,
   .votearrowactivateddown {
@@ -64,16 +67,19 @@ img {
     background-size: $arrow-size $arrow-size;
     display: block;
   }
+
   .votearrowactivated,
   .votearrowactivateddown {
     filter: brightness(0.7) sepia(1) hue-rotate(340deg) saturate(6);
   }
+
   .betweenvotesscoredown,
   .betweenvotesscore,
   .betweenvotesscoreup {
     font-size: 0.75rem;
     font-weight: bold;
   }
+
   .votetext {
     display: none;
   }
@@ -83,16 +89,19 @@ img {
   display: flex;
   justify-content: center;
   margin-top: 1rem;
+
   iframe {
     width: 100%;
     max-width: 550px;
   }
 }
+
 .youtubepreview {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+
   .youtubepreviewimage {
     height: 220px;
 
@@ -102,12 +111,14 @@ img {
 
     object-fit: cover;
   }
+
   .play-icon {
     position: absolute;
     width: 100px;
     height: auto;
   }
 }
+
 .youtubecontainer {
   display: flex;
   justify-content: center;
@@ -122,22 +133,32 @@ img {
     width: 100%;
     display: flex;
     flex-direction: column;
+
     .title {
-      margin-bottom: 0.875rem;
-      // $white-space: break-spaces;
-      // line-break: anywhere;
-      @include word-wrap;
-      a {
-        color: rgba(0, 0, 0, 0.76);
-      }
-      a[href]:not([href^="#thread?"]) {
-        color: $theme-secondary;
-        padding-bottom: 1rem;
-        display: block;
-        &:hover {
-          color: #354f78;
+
+      p {
+        margin-bottom: 0.875rem;
+        // $white-space: break-spaces;
+        // line-break: anywhere;
+        @include word-wrap;
+
+        a {
+          color: rgba(0, 0, 0, 0.76);
         }
+
+        a[href]:not([href^="#thread?"]) {
+          color: $theme-secondary;
+          // padding-bottom: 1rem;
+          display: block;
+
+          &:hover {
+            color: #354f78;
+          }
+        }
+
       }
+
+
     }
 
     .subtext {
@@ -146,17 +167,21 @@ img {
       display: flex;
       flex-direction: column;
       font-weight: bold;
+
       a {
         color: $text-secondary;
+
         &:hover {
           color: $text-primary;
         }
       }
+
       .submitter {
         margin-bottom: 0.25rem;
         border-bottom: 1px solid $text-divider;
         padding-bottom: 0.25rem;
         display: inline-block;
+
         a {
           display: inline-block;
         }
@@ -174,11 +199,13 @@ img {
 
   font-size: 0.75rem;
   display: flex;
+
   a {
     position: relative;
     display: flex;
     margin-right: 1rem;
     transition: all 0.15s ease-in-out;
+
     &:last-of-type {
       // margin-right: 0;
     }
@@ -193,6 +220,7 @@ img {
       transition: filter 1s ease-in-out;
       content: "";
     }
+
     &:hover {
       &:before {
         transition: filter 1s ease-in-out;
@@ -201,6 +229,7 @@ img {
 
     margin-right: 0.5rem;
     color: $text-secondary;
+
     &:hover {
       color: $text-primary;
     }
@@ -208,6 +237,7 @@ img {
 
   span.score {
     margin-right: 0.5rem;
+
     .likescounttext {
       margin-right: 0.15rem;
     }
@@ -247,6 +277,7 @@ img {
       display: inline-block;
       -webkit-transition: filter 1s ease-in-out;
     }
+
     // &:hover {
     //   color: $theme-primary;
     //   transition: filter 1s ease-in-out;
