@@ -1,6 +1,12 @@
 body.article {
     background: $white;
 
+    header,
+    footer,
+    #lowfundswarning {
+        display: none;
+    }
+
     #thread {
         .itemlist {
             .fatitem {
