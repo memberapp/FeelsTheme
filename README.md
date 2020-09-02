@@ -10,11 +10,6 @@ It is designed to be a 'fat' javascript client app that runs against a relativel
 You can see it online here - https://member.cash
 
 ## Getting Started
-
-Before making changes, it would be a good idea to check
-out [the contribution guidelines](CONTRIBUTING.md)
-and [open issues](https://github.com/memberapp/memberapp.github.io/issues)
-
 To get started locally clone the following repo https://github.com/FreeTrade/memberdev
 
 Serve the directory as a web-page via node
