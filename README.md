@@ -24,6 +24,7 @@ Clone this repo.
 
 Open a new termianl and run the following command
 
+    npm i
     npx gulp watch
 
 Edit the base theme by navigating to `/src/feels`
