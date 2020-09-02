@@ -70,7 +70,7 @@ img {
 
   .votearrowactivated,
   .votearrowactivateddown {
-    filter: brightness(0.7) sepia(1) hue-rotate(340deg) saturate(6);
+    filter: invert(62%) sepia(82%) saturate(457%) hue-rotate(68deg) brightness(100%) contrast(81%);
   }
 
   .betweenvotesscoredown,
