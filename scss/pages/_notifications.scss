@@ -3,6 +3,7 @@
 
   ul.notificationslist {
     padding: 0;
+
     li {
       list-style-type: none;
       @include card;
@@ -15,12 +16,18 @@
       hr.notificationhr {
         display: none;
       }
+
       .notificationtitle {
         padding: $base-padding;
         font-weight: bold;
         font-size: $font-size-small;
         background: #f8f9fa;
         border-bottom: 1px solid $text-divider;
+
+        .memberfilter {
+          display: inline-flex;
+        }
+
         .hnuser,
         .star-rating {
           margin-right: 0.5rem;
