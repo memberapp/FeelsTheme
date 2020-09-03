@@ -94,6 +94,11 @@
           margin-bottom: 0;
         }
 
+        span.memberfilter {
+          display: inline-flex;
+          align-items: center;
+        }
+
         .hnuser,
         a,
         .age {
@@ -108,21 +113,32 @@
           margin-right: 0.5rem;
         }
 
+        a[href="#member"] {
+          display: flex;
+          align-items: center;
+        }
+
         a[href="javascript:;"] {
           margin-left: auto;
           @include btn-outline;
           padding: 0.5rem 1rem;
         }
 
+        br {
+          display: none;
+
+        }
+
+
         // .age {
         //   flex: 1;
         // }
-        div:last-of-type {
-          margin-top: 0.75rem;
-          padding-top: 0.5rem;
-          border-top: 1px solid $text-divider;
-          width: 100%;
-        }
+        // div:last-of-type {
+        //   margin-top: 0.75rem;
+        //   padding-top: 0.5rem;
+        //   border-top: 1px solid $text-divider;
+        //   width: 100%;
+        // }
 
         .star-value {
           margin: 0 !important;
