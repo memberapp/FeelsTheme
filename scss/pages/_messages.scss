@@ -94,40 +94,70 @@
           margin-bottom: 0;
         }
 
-        span.memberfilter {
-          display: inline-flex;
-          align-items: center;
-        }
-
-        .hnuser,
-        a,
-        .age {
-          font-size: $font-size-small;
-          font-weight: bold;
-        }
-
-        [data-ratingsize],
-        .hnuser,
-        .age {
-          color: $text-secondary;
-          margin-right: 0.5rem;
-        }
-
-        a[href="#member"] {
-          display: flex;
-          align-items: center;
-        }
-
-        a[href="javascript:;"] {
-          margin-left: auto;
-          @include btn-outline;
-          padding: 0.5rem 1rem;
-        }
-
         br {
           display: none;
 
         }
+
+        div {
+          br {
+            display: block;
+          }
+        }
+
+        .messagemeta {
+
+          display: flex;
+          width: 100%;
+          align-items: center;
+          border-bottom: 1px solid $text-divider;
+          margin-bottom: 0.5rem;
+          padding-bottom: 0.5rem;
+
+
+
+
+
+          span.memberfilter {
+            display: inline-flex;
+            align-items: center;
+          }
+
+          .hnuser,
+          a,
+          .age {
+            font-size: $font-size-small;
+            font-weight: bold;
+          }
+
+          [data-ratingsize],
+          .hnuser,
+          .age {
+            color: $text-secondary;
+            margin-right: 0.5rem;
+          }
+
+          .star-value {
+            margin: 0 !important;
+            border: 0 !important;
+            padding: 0 !important;
+          }
+
+
+          a[href="#member"] {
+            display: flex;
+            align-items: center;
+          }
+
+          a[href="javascript:;"] {
+            margin-left: auto;
+            @include btn-outline;
+            padding: 0.5rem 1rem;
+          }
+        }
+
+
+
 
 
         // .age {
@@ -140,11 +170,7 @@
         //   width: 100%;
         // }
 
-        .star-value {
-          margin: 0 !important;
-          border: 0 !important;
-          padding: 0 !important;
-        }
+
       }
     }
   }
