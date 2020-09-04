@@ -107,12 +107,19 @@
 
         .messagemeta {
 
-          display: flex;
+
           width: 100%;
-          align-items: center;
+
           border-bottom: 1px solid $text-divider;
           margin-bottom: 0.5rem;
           padding-bottom: 0.5rem;
+          flex-wrap: wrap-reverse;
+          align-items: center;
+          display: flex;
+
+          @include media(">tablet") {
+            flex-wrap: wrap;
+          }
 
 
 
