@@ -125,6 +125,29 @@ img {
   margin-top: 1rem;
 }
 
+
+.notificationtitle,
+.repost {
+  padding: $base-padding;
+  font-weight: bold;
+  font-size: $font-size-small;
+  background: #f8f9fa;
+  border-bottom: 1px solid $text-divider;
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  .memberfilter {
+    display: inline-flex;
+  }
+
+  .hnuser,
+  .star-rating {
+    margin-right: 0.5rem;
+    margin-right: 0.25rem;
+  }
+}
+
 .post {
   display: flex;
 
