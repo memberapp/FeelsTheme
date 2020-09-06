@@ -272,7 +272,9 @@ img {
   }
 
   [id^="permalinkposts"],
-  [id^="permalinkthread"] {
+  [id^="permalinkthread"],
+  [id^="permalinknotifications"],
+    {
     &::before {
       background: url(../img/link-45deg.svg);
       background-size: $arrow-size $arrow-size;
@@ -280,8 +282,21 @@ img {
     }
   }
 
+  [id^="repostlinknotifications"],
+  [id^="repostlinkposts"],
+  [id^="repostlinkthread"] {
+    &::before {
+      background: url(../img/re-member.svg);
+      background-size: $arrow-size $arrow-size;
+      display: inline-block;
+    }
+  }
+
+
+
   [id^="replylinkposts"],
-  [id^="replylinkthread"] {
+  [id^="replylinkthread"],
+  [id^="replylinknotifications"] {
     &::before {
       background: url(../img/chat-right-fill.svg);
       background-size: $arrow-size $arrow-size;
@@ -298,7 +313,8 @@ img {
   }
 
   a[id^="tiplinkposts"],
-  a[id^="tiplinkthread"] {
+  a[id^="tiplinkthread"],
+  a[id^="tiplinknotifications"] {
     &::before {
       background: url(../img/tip.svg);
       background-size: $arrow-size $arrow-size;
@@ -331,6 +347,7 @@ img {
   a[id^="hideuserlinkposts"],
   a[id^="hidepostlinkposts"],
   a[id^="hidepostlinkthread"],
+  a[id^="hidepostlinknotifications"],
   a[id^="hideuserlinkthread"] {
     color: $theme-danger;
   }
