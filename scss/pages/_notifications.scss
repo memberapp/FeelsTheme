@@ -1,6 +1,11 @@
 #notifications {
   @include container-thin;
 
+  .notificationtitle,
+  .repost {
+    display: inherit;
+  }
+
   ul.notificationslist {
     padding: 0;
 

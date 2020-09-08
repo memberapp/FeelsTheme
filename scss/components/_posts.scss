@@ -125,6 +125,17 @@ img {
   margin-top: 1rem;
 }
 
+.memberfilter {
+  display: inline-flex;
+  margin-left: 0.25rem;
+
+  .starrating {
+    margin: 0 0.25rem;
+    display: flex;
+    align-items: center;
+
+  }
+}
 
 .notificationtitle,
 .repost {
@@ -137,14 +148,13 @@ img {
   display: flex;
   align-items: center;
 
-  .memberfilter {
-    display: inline-flex;
-  }
+
 
   .hnuser,
   .star-rating {
-    margin-right: 0.5rem;
     margin-right: 0.25rem;
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -273,8 +283,7 @@ img {
 
   [id^="permalinkposts"],
   [id^="permalinkthread"],
-  [id^="permalinknotifications"],
-    {
+  [id^="permalinknotifications"] {
     &::before {
       background: url(../img/link-45deg.svg);
       background-size: $arrow-size $arrow-size;
@@ -285,6 +294,11 @@ img {
   [id^="repostlinknotifications"],
   [id^="repostlinkposts"],
   [id^="repostlinkthread"] {
+
+    .repostscount {
+      margin-right: 0.15rem;
+    }
+
     &::before {
       background: url(../img/re-member.svg);
       background-size: $arrow-size $arrow-size;

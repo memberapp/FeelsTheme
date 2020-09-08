@@ -4,8 +4,8 @@ img {
 }
 
 .jdenticon {
-  width: 15px;
-  height: 15px;
+  width: 1rem;
+  height: 1rem;
   margin-bottom: -3px;
   margin-right: 2px;
 }
@@ -48,24 +48,4 @@ img {
 
 .blocked {
   opacity: 0.2;
-}
-
-
-.starrating {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid rgba(0, 0, 0, .12);
-  padding: 0.2rem 0.25rem;
-  margin-left: 0.25rem;
-  margin-right: 0.5rem;
-  background: rgba(0, 0, 0, 0.03);
-  border-radius: 0.25rem;
-
-  div {
-    margin: 0 !important;
-    padding: 0 !important;
-    border: none !important;
-    width: 100%;
-  }
 }

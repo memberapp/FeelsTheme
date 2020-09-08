@@ -1,13 +1,17 @@
 #member {
   @include container-thin;
+
   .content {
     div {
       margin-bottom: 1rem;
     }
+
     @include card;
     padding: $base-padding * 2;
+
     #membernametext {
       display: flex;
+
       a[href^="javascript:;"] {
         @include btn;
 
@@ -18,31 +22,56 @@
     .memberrating {
       margin: 0 auto;
       display: table;
+
+      .starrating {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgba(0, 0, 0, .12);
+        padding: 0.2rem 0.25rem;
+        margin-left: 0.25rem;
+        margin-right: 0.5rem;
+        background: rgba(0, 0, 0, 0.03);
+        border-radius: 0.25rem;
+
+        div {
+          margin: 0 !important;
+          padding: 0 !important;
+          border: none !important;
+          width: 100%;
+        }
+      }
     }
   }
 }
 
-#ratings,
+#anchorratings,
 #community {
   @include container-thin;
+
   .content {
     @include card;
     padding: $base-padding * 2;
+
     br {
       display: none;
     }
+
     table {
       width: 100%;
+
       th,
       td {
         &:empty {
           // width: 0.25rem;
         }
+
         &:last-of-type {
           text-align: left;
           @include word-wrap;
         }
       }
+
       td {
         img {
           outline: none;
@@ -56,23 +85,29 @@
 
 #trustgraph {
   @include container-thin;
+
   .content {
     @include card;
     padding: $base-padding * 2;
+
     br {
       display: none;
     }
+
     table {
       width: 100%;
     }
+
     #trustgraphdetails {
       display: flex;
       flex-direction: column;
       align-items: center;
+
       table {
         width: 100%;
       }
     }
+
     #trustgraphnotes {
       margin-top: 1rem;
       padding-top: 1rem;

@@ -155,6 +155,11 @@ header {
 
             .sats {
               padding: 0;
+              position: relative;
+
+              &:before {
+                content: ",";
+              }
             }
           }
 
