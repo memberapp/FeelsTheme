@@ -1,7 +1,33 @@
 img {
   width: 100%;
   height: auto;
+
+
 }
+
+.imgurimage {
+  $deepColor: rgba(0, 0, 0, .2);
+  $cubeSize: 25px;
+  background-color: white;
+  background-image:
+    linear-gradient(45deg,
+      $deepColor 25%,
+      transparent 25%,
+      transparent 75%,
+      $deepColor 75%,
+      $deepColor),
+    linear-gradient(45deg,
+      $deepColor 25%,
+      transparent 25%,
+      transparent 75%,
+      $deepColor 75%,
+      $deepColor);
+  background-size: ($cubeSize * 2) ($cubeSize * 2);
+  background-position: 0 0, $cubeSize $cubeSize;
+}
+
+
+
 
 .jdenticon {
   width: 1rem;

@@ -92,5 +92,6 @@
 
   .content {
     @include card;
+    padding: $base-padding * 2;
   }
 }
