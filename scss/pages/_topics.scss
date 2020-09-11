@@ -89,4 +89,8 @@
 
 #topicmeta {
   @include container-thin;
+
+  .content {
+    @include card;
+  }
 }
