@@ -153,14 +153,7 @@ header {
             padding: 0;
             margin-right: 0.5rem;
 
-            .sats {
-              padding: 0;
-              position: relative;
 
-              &:before {
-                content: ",";
-              }
-            }
           }
 
           #mapbutton {

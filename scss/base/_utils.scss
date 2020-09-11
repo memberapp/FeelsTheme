@@ -49,3 +49,12 @@ img {
 .blocked {
   opacity: 0.2;
 }
+
+.sats {
+  padding: 0;
+  position: relative;
+
+  &:before {
+    content: ",";
+  }
+}
