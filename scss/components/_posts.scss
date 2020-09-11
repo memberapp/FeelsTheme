@@ -126,14 +126,18 @@ img {
 }
 
 .memberfilter {
-  display: inline-flex;
+  display: inline-block;
   margin-left: 0.25rem;
 
   .starrating {
     margin: 0 0.25rem;
-    display: flex;
-    align-items: center;
+    display: inline-block;
+    // align-items: center;
 
+  }
+
+  .hnuser {
+    display: inline-block !important;
   }
 }
 
