@@ -297,22 +297,51 @@ img {
 
   [id^="repostlinknotifications"],
   [id^="repostlinkposts"],
+  [id^="repostlinkmemberposts"],
   [id^="repostlinkthread"] {
+
+    // &::before {
+    //   background: url(../img/re-member.svg);
+    //   background-size: $arrow-size $arrow-size;
+    //   display: inline-block;
+    // }
+
+  }
+
+
+  .rememberscounttext {
+    margin-right: 0.15rem;
+
+    a.remebersinactive,
+    a.remebersactive {
+      &::before {
+        background: url(../img/re-member.svg);
+        background-size: $arrow-size $arrow-size;
+        display: inline-block;
+      }
+    }
+
+    a.remebersinactive {
+      color: $theme-primary;
+
+      &::before {
+        fill: $theme-primary;
+      }
+    }
 
     .repostscount {
       margin-right: 0.15rem;
     }
 
-    &::before {
-      background: url(../img/re-member.svg);
-      background-size: $arrow-size $arrow-size;
-      display: inline-block;
-    }
   }
 
 
 
+
+
   [id^="replylinkposts"],
+  [id^="replylinkmemberposts"],
+
   [id^="replylinkthread"],
   [id^="replylinknotifications"] {
     &::before {
@@ -332,6 +361,7 @@ img {
 
   a[id^="tiplinkposts"],
   a[id^="tiplinkthread"],
+  a[id^="tiplinkmemberposts"],
   a[id^="tiplinknotifications"] {
     &::before {
       background: url(../img/tip.svg);
@@ -365,6 +395,8 @@ img {
   a[id^="hideuserlinkposts"],
   a[id^="hidepostlinkposts"],
   a[id^="hidepostlinkthread"],
+  a[id^="hidepostlinkmemberposts"],
+  a[id^="hideuserlinkmemberposts"],
   a[id^="hidepostlinknotifications"],
   a[id^="hideuserlinkthread"] {
     color: $theme-danger;
