@@ -1,14 +1,31 @@
 #topiclistanchor {
+
+  @include container-thin;
+  overflow-x: auto;
+  white-space: nowrap;
+
   br {
     display: none;
   }
 
-  @include container-thin;
+
 
   table {
     @include card;
     width: 100%;
     padding: $base-padding * 2;
+
+
+    @include media("<phone") {
+
+      td.tltopicname {
+        max-width: 200px;
+        white-space: pre-wrap;
+      }
+    }
+
+
+
 
     .filterprovider {
       display: flex;
