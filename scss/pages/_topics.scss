@@ -27,80 +27,13 @@
 
 
 
-    .filterprovider {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-direction: row-reverse;
-      margin-bottom: 1rem;
 
-
-      a[id^="designate"] {
-        width: inherit;
-        width: 100%;
-        text-align: center;
-        background: #4dc846;
-        border: 1px solid darken($theme-primary, 10);
-
-        &:hover {
-          background: darken($theme-primary, 10);
-          border: 1px solid darken($theme-primary, 20);
-        }
-      }
-
-
-
-      .mib {
-        color: transparent;
-
-        a[href^="#member?"] {}
-      }
-
-      a[href^="javascript:;"] {
-        width: auto;
-      }
-
-
-    }
 
     .tltopicname {
       text-align: left;
     }
 
-    tbody {
-      tr {
-        td {
 
-          a[href^="#modmorelink"],
-          a[href^="javascript:;"] {
-            @include btn;
-            width: 100%;
-            margin-bottom: 0;
-          }
-
-          &:first-of-type {
-            text-align: left;
-            font-weight: bold;
-          }
-        }
-
-        // &[id^="modmore"] {
-        //   display: flex;
-        //   width: 100%;
-
-        //   .filterprovider {
-        //     &:first-of-type {
-        //       margin-right: 1rem;
-        //     }
-
-        //     &:only-child {
-        //       margin-right: 0;
-        //       ;
-        //     }
-        //   }
-        // }
-      }
-    }
   }
 }
 
@@ -110,5 +43,95 @@
   .content {
     @include card;
     padding: $base-padding * 2;
+  }
+}
+
+
+
+
+tbody {
+  tr {
+    td {
+
+      a[href^="#modmorelink"],
+      a[href^="javascript:;"] {
+        @include btn;
+        width: 100%;
+        margin-bottom: 0;
+      }
+
+      &:first-of-type {
+        text-align: left;
+        font-weight: bold;
+      }
+
+
+      .filterprovider {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        margin-bottom: 1rem;
+
+        a.unsub {
+          background-color: $theme-danger;
+          border: 1px solid darken($theme-danger, 10);
+
+          &:hover {
+            background: darken($theme-danger, 10);
+            border: 1px solid darken($theme-danger, 20);
+          }
+
+        }
+
+
+        a[id^="designate"] {
+          width: inherit;
+          width: 100%;
+          text-align: center;
+          background: #4dc846;
+          border: 1px solid darken($theme-primary, 10);
+
+          &:hover {
+            background: darken($theme-primary, 10);
+            border: 1px solid darken($theme-primary, 20);
+          }
+        }
+
+
+
+        .mib {
+          color: transparent;
+
+          a[href^="#member?"] {}
+        }
+
+        a[href^="javascript:;"] {
+          width: auto;
+        }
+
+
+      }
+
+
+
+
+    }
+
+    // &[id^="modmore"] {
+    //   display: flex;
+    //   width: 100%;
+
+    //   .filterprovider {
+    //     &:first-of-type {
+    //       margin-right: 1rem;
+    //     }
+
+    //     &:only-child {
+    //       margin-right: 0;
+    //       ;
+    //     }
+    //   }
+    // }
   }
 }
