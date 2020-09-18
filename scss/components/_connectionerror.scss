@@ -1,0 +1,7 @@
+.connectionerror {
+    @include card;
+    padding: $base-padding * 2;
+    display: flex;
+    overflow-wrap: anywhere;
+    text-align: center;
+}
