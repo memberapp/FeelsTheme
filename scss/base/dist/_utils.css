@@ -1,33 +1,14 @@
 img {
   width: 100%;
   height: auto;
-
-
 }
 
 .imgurimage {
-  $deepColor: rgba(0, 0, 0, .12);
-  $cubeSize: 25px;
   background-color: white;
-  background-image:
-    linear-gradient(45deg,
-      $deepColor 25%,
-      transparent 25%,
-      transparent 75%,
-      $deepColor 75%,
-      $deepColor),
-    linear-gradient(45deg,
-      $deepColor 25%,
-      transparent 25%,
-      transparent 75%,
-      $deepColor 75%,
-      $deepColor);
-  background-size: ($cubeSize * 2) ($cubeSize * 2);
-  background-position: 0 0, $cubeSize $cubeSize;
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.12) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.12) 75%, rgba(0, 0, 0, 0.12)), linear-gradient(45deg, rgba(0, 0, 0, 0.12) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.12) 75%, rgba(0, 0, 0, 0.12));
+  background-size: 50px 50px;
+  background-position: 0 0, 25px 25px;
 }
-
-
-
 
 .jdenticon {
   width: 1rem;
@@ -42,14 +23,12 @@ img {
 }
 
 /*! Remove newlines for links*/
-
 .post .postdetails .title a[href]:not([href^="#thread?"]) {
   padding-bottom: 0rem;
   display: inline;
 }
 
 /*! For deep nesting on narrow screens*/
-
 .comment-tree ul ul ul {
   margin-left: 0.5rem;
 }
@@ -65,13 +44,11 @@ img {
 }
 
 /*! newline after each user search result*/
-
 #usersearchresults br {
   display: inherit;
 }
 
 /*! grey out muted users or filtered users/posts in threads*/
-
 .blocked {
   opacity: 0.2;
 }
@@ -79,10 +56,9 @@ img {
 .sats {
   padding: 0;
   position: relative;
-
-  &:before {
-    content: ",";
-  }
+}
+.sats:before {
+  content: ",";
 }
 
 .previewcontent {
