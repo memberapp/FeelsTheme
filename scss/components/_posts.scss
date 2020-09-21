@@ -178,6 +178,7 @@ img {
         // $white-space: break-spaces;
         // line-break: anywhere;
         @include word-wrap;
+        cursor: default;
 
         a {
           color: rgba(0, 0, 0, 0.76);
