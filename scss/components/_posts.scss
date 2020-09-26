@@ -126,7 +126,7 @@ img {
 }
 
 .memberfilter {
-  display: inline-block;
+  display: inline-flex;
   margin-left: 0.25rem;
 
   .starrating {
@@ -137,7 +137,7 @@ img {
   }
 
   .hnuser {
-    display: inline-block !important;
+    display: inline-flex !important;
   }
 }
 

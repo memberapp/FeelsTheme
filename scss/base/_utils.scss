@@ -88,3 +88,32 @@ img {
 .previewcontent {
   display: none;
 }
+
+
+.memberpicturelarge,
+.memberpicturesmall,
+.settingspicturelarge {
+  outline: none;
+}
+
+.memberpicsmall {
+  .memberpicturesmall {
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+    margin-right: 0.25rem;
+  }
+}
+
+
+.memberpicturelarge,
+.settingspicturelarge {
+  height: 320px;
+  width: 320px;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.settingspicturelarge {
+  margin: 0 auto;
+}
