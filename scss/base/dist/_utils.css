@@ -69,6 +69,7 @@ img {
 .memberpicturesmall,
 .settingspicturelarge {
   outline: none;
+  border-radius: 0.5rem;
 }
 
 .memberpicsmall .memberpicturesmall {
