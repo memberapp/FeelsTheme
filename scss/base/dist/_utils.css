@@ -11,10 +11,9 @@ img {
 }
 
 .jdenticon {
-  width: 1rem;
-  height: 1rem;
-  margin-bottom: -3px;
-  margin-right: 2px;
+  height: 2rem;
+  width: 2rem;
+  margin-right: 0.25rem;
 }
 
 .jdenticonlarge {
@@ -72,9 +71,14 @@ img {
   border-radius: 0.5rem;
 }
 
+.memberpicsmall {
+  display: flex !important;
+  align-items: center !important;
+}
 .memberpicsmall .memberpicturesmall {
-  height: 16px;
-  width: 16px;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 100%;
   display: inline-block;
   margin-right: 0.25rem;
 }

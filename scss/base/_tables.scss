@@ -1,5 +1,6 @@
 table {
   border-spacing: 0;
+  border-collapse: collapse;
   text-align: center;
   margin-bottom: 1rem;
   display: table;
@@ -8,6 +9,9 @@ table {
   @include media("<desktop") {
     overflow-x: auto;
   }
+
+
+
 
   thead {
     tr {
@@ -23,6 +27,9 @@ table {
   }
 
   tbody {
+    width: 100%;
+    display: contents;
+
     tr {
       td {
         border-bottom: 1px solid $text-divider;

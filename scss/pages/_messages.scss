@@ -163,7 +163,15 @@
           }
         }
 
+        .replymessagemeta {
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
 
+          .memberfilter {
+            margin-right: 0.25rem;
+          }
+        }
 
 
 

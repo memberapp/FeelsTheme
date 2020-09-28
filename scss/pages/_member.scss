@@ -6,6 +6,10 @@
       margin-bottom: 1rem;
     }
 
+    #memberprofiletext {
+      white-space: break-spaces;
+    }
+
     @include card;
     padding: $base-padding * 2;
 
@@ -27,7 +31,7 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        border: 1px solid rgba(0, 0, 0, .12);
+        border: 1px solid rgba(0, 0, 0, 0.12);
         padding: 0.2rem 0.25rem;
         margin-left: 0.25rem;
         margin-right: 0.5rem;
@@ -104,14 +108,61 @@
       align-items: center;
 
       table {
-        width: 100%;
+        @include media("<tablet") {
+          thead {
+            display: none;
+          }
+
+          tr {
+            display: table;
+            margin-bottom: 1.5rem;
+            width: 100%;
+            border-radius: 0.5rem;
+            background: rgba(0, 0, 0, 0.05);
+
+            &:nth-child(even) {
+              background: lighten($theme-secondary, 50);
+            }
+          }
+
+          td {
+            display: table-row;
+          }
+
+          td:before,
+          td > span {
+            display: table-cell;
+            padding: 0.5rem 1rem;
+          }
+
+          td:before {
+            content: attr(data-label);
+            font-weight: 400;
+            text-align: left;
+            color: $text-secondary;
+            width: 50%;
+          }
+
+          td:not(.align-start) > span {
+            vertical-align: middle;
+            text-align: left;
+          }
+
+          td:last-of-type {
+            border-bottom: none;
+          }
+        }
+      }
+
+      #overall {
+        margin-bottom: 1rem;
       }
     }
 
     #trustgraphnotes {
       margin-top: 1rem;
-      padding-top: 1rem;
-      border-top: 1px solid $text-divider;
+      // padding-top: 1rem;
+      // border-top: 1px solid $text-divider;
       @include assistive-text;
     }
   }
