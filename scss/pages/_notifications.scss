@@ -3,7 +3,13 @@
 
   .notificationtitle,
   .repost {
-    display: inherit;
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    .age {
+      margin-left: 0.25rem;
+    }
   }
 
   ul.notificationslist {
@@ -20,6 +26,14 @@
 
       hr.notificationhr {
         display: none;
+      }
+
+      a {
+        margin: 0 0.25rem;
+
+        // &:first-of-type {
+        //   margin: 0 0 0 0.25rem;
+        // }
       }
 
 
