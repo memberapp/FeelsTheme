@@ -18,7 +18,6 @@
 
       a[href^="javascript:;"] {
         @include btn;
-
         margin-left: auto;
       }
     }
@@ -130,7 +129,7 @@
           }
 
           td:before,
-          td > span {
+          td>span {
             display: table-cell;
             padding: 0.5rem 1rem;
           }
@@ -143,7 +142,7 @@
             width: 50%;
           }
 
-          td:not(.align-start) > span {
+          td:not(.align-start)>span {
             vertical-align: middle;
             text-align: left;
           }
