@@ -6,12 +6,14 @@ body {
   ::-moz-selection {
     background: rgba(134, 217, 129, 0.6);
   }
+
   ::selection {
     background: rgba(134, 217, 129, 0.6);
   }
 }
 
 html {
+
   &:lang(zh),
   :lang(zh-Hans),
   :lang(zh-Hant),
@@ -43,6 +45,7 @@ html {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+
   div {
     margin: 0.5rem;
     padding: 0.5rem;
@@ -52,14 +55,16 @@ html {
     flex: 1;
     border: 1px solid rgba(0, 0, 0, 0.37);
     border-radius: $border-radius-regular;
+
     &:first-of-type {
       // margin: 0;
     }
+
     label {
       margin-bottom: 0;
     }
-    a {
-    }
+
+    a {}
   }
 }
 
@@ -71,6 +76,7 @@ html {
       margin-right: 1rem;
       @include btn-outline;
       display: inline-block;
+
       &:last-of-type {
         margin-right: 0;
       }
@@ -85,14 +91,17 @@ html {
 #memberlegacyaddress {
   display: flex;
   flex-direction: column;
+
   span {
     word-break: break-all;
     margin-bottom: 1rem;
   }
+
   div {
     display: flex;
     flex-direction: column;
   }
+
   #cashaddrformatdiv,
   #legacyformatdiv,
   #privatekeyformatdiv,
@@ -115,8 +124,19 @@ html {
         color: darken($theme-secondary, 10);
       }
     }
+
     img {
       outline: none;
     }
   }
+}
+
+
+.message {
+  text-align: center;
+  font-weight: bold;
+  padding: 1rem;
+  background: $theme-warning;
+  border: 1px solid darken($theme-warning, 15);
+  border-radius: 0.25rem;
 }
