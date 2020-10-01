@@ -350,10 +350,9 @@ img {
 }
 
 .jdenticon {
-  width: 1rem;
-  height: 1rem;
-  margin-bottom: -3px;
-  margin-right: 2px;
+  height: 2rem;
+  width: 2rem;
+  margin-right: 0.25rem;
 }
 
 .jdenticonlarge {
@@ -402,6 +401,37 @@ img {
 
 .previewcontent {
   display: none;
+}
+
+.memberpicturelarge,
+.memberpicturesmall,
+.settingspicturelarge {
+  outline: none;
+  border-radius: 0.5rem;
+}
+
+.memberpicsmall {
+  display: flex !important;
+  align-items: center !important;
+}
+.memberpicsmall .memberpicturesmall {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 100%;
+  display: inline-block;
+  margin-right: 0.25rem;
+}
+
+.memberpicturelarge,
+.settingspicturelarge {
+  height: 320px;
+  width: 320px;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.settingspicturelarge {
+  margin: 0 auto;
 }
 
 body {
@@ -762,6 +792,7 @@ blockquote p {
 
 table {
   border-spacing: 0;
+  border-collapse: collapse;
   text-align: center;
   margin-bottom: 1rem;
   display: table;
@@ -778,6 +809,10 @@ table thead tr td {
   background: rgba(0, 0, 0, 0.12);
   padding: 0.5rem;
   font-weight: bold;
+}
+table tbody {
+  width: 100%;
+  display: contents;
 }
 table tbody tr td {
   border-bottom: 1px solid rgba(0, 0, 0, 0.12);
@@ -1092,7 +1127,8 @@ img {
 }
 
 .memberfilter {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   margin-left: 0.25rem;
 }
 .memberfilter .starrating {
@@ -1100,7 +1136,8 @@ img {
   display: inline-block;
 }
 .memberfilter .hnuser {
-  display: inline-block !important;
+  display: inline-flex !important;
+  align-items: center;
 }
 
 .notificationtitle,
@@ -1139,12 +1176,14 @@ img {
   -ms-word-break: break-all;
   word-break: break-all;
   word-break: break-word;
+  cursor: default;
 }
 .post .postdetails .title p a {
   color: rgba(0, 0, 0, 0.76);
 }
 .post .postdetails .title p a[href]:not([href^="#thread?"]) {
   color: #44669c;
+  margin: 0;
 }
 .post .postdetails .title p a[href]:not([href^="#thread?"]):hover {
   color: #354f78;
@@ -1256,11 +1295,11 @@ img {
 }
 .postdetails .subtextbuttons [id^=replylinkposts]::before,
 .postdetails .subtextbuttons [id^=replylinkmemberposts]::before,
-.postdetails .subtextbuttons [id^=replylinkthread]::before,
+.postdetails .subtextbuttons [id^=replylink]::before,
 .postdetails .subtextbuttons [id^=replylinknotifications]::before,
 .comment-tree ul li .reply div .subtextbuttons [id^=replylinkposts]::before,
 .comment-tree ul li .reply div .subtextbuttons [id^=replylinkmemberposts]::before,
-.comment-tree ul li .reply div .subtextbuttons [id^=replylinkthread]::before,
+.comment-tree ul li .reply div .subtextbuttons [id^=replylink]::before,
 .comment-tree ul li .reply div .subtextbuttons [id^=replylinknotifications]::before {
   background: url(../img/chat-right-fill.svg);
   background-size: 0.875rem 0.875rem;
@@ -1308,6 +1347,34 @@ img {
 .comment-tree ul li .reply div .subtextbuttons a[id^=hidepostlinknotifications],
 .comment-tree ul li .reply div .subtextbuttons a[id^=hideuserlinkthread] {
   color: #c1292e;
+}
+
+.subtext {
+  font-size: 0.75rem;
+  color: rgba(0, 0, 0, 0.54);
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+.subtext a {
+  color: rgba(0, 0, 0, 0.54);
+}
+.subtext a:hover {
+  color: rgba(0, 0, 0, 0.87);
+}
+.subtext .submitter {
+  margin-bottom: 0.25rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  padding-bottom: 0.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.subtext .submitter a {
+  display: inline-block;
+}
+.subtext .submitter .age {
+  margin: 0 0.25rem;
 }
 
 .fatitem .reply div:only-child {
@@ -1849,6 +1916,29 @@ footer .footerlinks .vavilon {
 @media (min-width: 769px) {
   #lowfundswarning .content a:not([rel~=noreferrer]) {
     display: inline-block;
+  }
+}
+
+.connectionerror {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 0.25rem;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  padding: 1.75rem;
+  display: flex;
+  overflow-wrap: anywhere;
+  text-align: center;
+}
+@media (max-width: 400px) {
+  .connectionerror {
+    margin-left: -15px !important;
+    margin-right: -15px !important;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
   }
 }
 
@@ -2679,11 +2769,46 @@ tbody tr td .filterprovider a[href^="javascript:;"] {
   background: transparent;
   padding: 0.5rem 1.5rem;
   padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: bold;
 }
 #messagesanchor .content #messageslist li .messagemeta a[href="javascript:;"]:hover {
   background: #e9eef6;
 }
 #messagesanchor .content #messageslist li .messagemeta a[href="javascript:;"]:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+#messagesanchor .content #messageslist li .replymessagemeta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+#messagesanchor .content #messageslist li .replymessagemeta .memberfilter {
+  margin-right: 0.25rem;
+}
+#messagesanchor .content #messageslist li .replymessagemeta a[href="javascript:;"] {
+  margin-left: auto;
+  line-height: 1.2;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.15s ease-in-out;
+  color: #44669c;
+  text-transform: uppercase;
+  border-radius: 0.25rem;
+  border: 1px solid #44669c;
+  background: transparent;
+  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+#messagesanchor .content #messageslist li .replymessagemeta a[href="javascript:;"]:hover {
+  background: #e9eef6;
+}
+#messagesanchor .content #messageslist li .replymessagemeta a[href="javascript:;"]:disabled {
   opacity: 0.65;
   cursor: not-allowed;
   pointer-events: none;
@@ -2717,6 +2842,9 @@ tbody tr td .filterprovider a[href^="javascript:;"] {
 }
 #member .content div {
   margin-bottom: 1rem;
+}
+#member .content #memberprofiletext {
+  white-space: break-spaces;
 }
 @media (max-width: 400px) {
   #member .content {
@@ -2888,13 +3016,48 @@ tbody tr td .filterprovider a[href^="javascript:;"] {
   flex-direction: column;
   align-items: center;
 }
-#trustgraph .content #trustgraphdetails table {
-  width: 100%;
+@media (max-width: 767px) {
+  #trustgraph .content #trustgraphdetails table thead {
+    display: none;
+  }
+  #trustgraph .content #trustgraphdetails table tr {
+    display: table;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    background: rgba(0, 0, 0, 0.05);
+  }
+  #trustgraph .content #trustgraphdetails table tr:nth-child(even) {
+    background: #e9eef6;
+  }
+  #trustgraph .content #trustgraphdetails table td {
+    display: table-row;
+  }
+  #trustgraph .content #trustgraphdetails table td:before,
+#trustgraph .content #trustgraphdetails table td > span {
+    display: table-cell;
+    padding: 0.5rem 1rem;
+  }
+  #trustgraph .content #trustgraphdetails table td:before {
+    content: attr(data-label);
+    font-weight: 400;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.54);
+    width: 50%;
+  }
+  #trustgraph .content #trustgraphdetails table td:not(.align-start) > span {
+    vertical-align: middle;
+    text-align: left;
+  }
+  #trustgraph .content #trustgraphdetails table td:last-of-type {
+    border-bottom: none;
+  }
+}
+#trustgraph .content #trustgraphdetails #overall {
+  margin-bottom: 1rem;
 }
 #trustgraph .content #trustgraphnotes {
   margin-top: 1rem;
-  padding-top: 1rem;
-  border-top: 1px solid rgba(0, 0, 0, 0.12);
   font-size: 0.875rem;
   color: rgba(0, 0, 0, 0.54);
 }
@@ -3001,9 +3164,19 @@ tbody tr td .filterprovider a[href^="javascript:;"] {
     max-width: 540px;
   }
 }
+#notifications .notificationtitle .memberfilter {
+  margin-left: 0;
+}
 #notifications .notificationtitle,
 #notifications .repost {
-  display: inherit;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+#notifications .notificationtitle .age,
+#notifications .repost .age {
+  margin-left: 0.25rem;
 }
 #notifications ul.notificationslist {
   padding: 0;
@@ -3033,6 +3206,13 @@ tbody tr td .filterprovider a[href^="javascript:;"] {
 }
 #notifications ul.notificationslist li hr.notificationhr {
   display: none;
+}
+#notifications ul.notificationslist li a {
+  margin: 0 0.25rem;
+}
+#notifications ul.notificationslist li a.hnuser {
+  margin-left: 0;
+  white-space: nowrap;
 }
 
 #blockers,

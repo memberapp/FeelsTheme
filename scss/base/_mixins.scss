@@ -53,7 +53,8 @@
   border: 1px solid $text-divider;
   border-radius: $border-radius-regular;
   margin-bottom: 1.5rem;
-  overflow: hidden;
+  // overflow: hidden;
+  overflow: inherit;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 
   // &:hover {
