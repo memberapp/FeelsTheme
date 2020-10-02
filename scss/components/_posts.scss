@@ -283,6 +283,13 @@ img {
 
   span.score {
     margin-right: 0.5rem;
+    cursor: pointer;
+    transition: filter 1s ease-in-out;
+
+    &:hover {
+      transition: filter 1s ease-in-out;
+      color: $text-primary;
+    }
 
     .likescounttext {
       margin-right: 0.15rem;
