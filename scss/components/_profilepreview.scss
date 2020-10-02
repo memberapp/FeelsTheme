@@ -4,21 +4,52 @@
 
 .profilepreview {
     position: absolute;
-    margin-top: 1rem;
     display: block;
     background: white;
     border: 1px solid $text-divider;
     border-radius: 0.5rem;
     padding: 1rem;
-    top: 0;
+    top: 1rem;
     z-index: 99;
-    width: 300px;
-    font-size: 1rem;
-    color: $text-primary;
+    width: 400px;
+    // width: 300px;
+
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 
     .post .postdetails .subtext a {
         color: $text-primary;
     }
+
+    .profile-meta {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-size: 1rem;
+        color: $text-primary;
+
+        .member-name {
+            font-weight: bold;
+        }
+
+        .member-handle {
+            font-weight: 400;
+            color: $text-secondary;
+        }
+
+        a {
+            &:last-of-type {
+                width: 100%;
+            }
+        }
+    }
+
+    .profile-text {
+        font-size: 1rem;
+        color: $text-primary;
+        font-weight: 400;
+    }
+
+    .profile-actions {}
 
 }

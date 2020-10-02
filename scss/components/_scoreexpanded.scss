@@ -1,0 +1,35 @@
+.scoreexpanded {
+    padding: 1rem 0;
+
+
+    .closebutton {
+
+        display: flex;
+        margin-left: auto;
+
+        a {
+            @include btn-outline;
+            color: $theme-danger;
+            // padding: 0.5 1rem;
+            border: 1px solid $theme-danger;
+            margin-left: auto !important;
+
+            &:hover {
+                background: lighten($theme-danger, 50);
+            }
+        }
+    }
+
+    .tipdetails {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid rgba(0, 0, 0, .12);
+        margin: 0.5rem 0;
+
+        // &:last-of-type {
+        //     border-bottom: none;
+        // }
+
+        .memberfilter {}
+    }
+}

@@ -13,7 +13,6 @@ body {
 }
 
 html {
-
   &:lang(zh),
   :lang(zh-Hans),
   :lang(zh-Hant),
@@ -64,7 +63,8 @@ html {
       margin-bottom: 0;
     }
 
-    a {}
+    a {
+    }
   }
 }
 
@@ -130,7 +130,6 @@ html {
     }
   }
 }
-
 
 .message {
   text-align: center;
