@@ -26,13 +26,14 @@
         flex-direction: row;
         flex-wrap: wrap;
         font-size: 1rem;
+        margin-bottom: 1rem;
         color: $text-primary;
 
-        .member-name {
+        .member-handle {
             font-weight: bold;
         }
 
-        .member-handle {
+        .member-pagingid {
             font-weight: 400;
             color: $text-secondary;
         }
@@ -48,8 +49,25 @@
         font-size: 1rem;
         color: $text-primary;
         font-weight: 400;
+        line-height: 1.15;
+        margin-bottom: 1rem;
     }
 
-    .profile-actions {}
+    .profile-actions {
+        display: flex;
+        align-items: center;
+
+        .profilepreviewfollowers {}
+
+        .profilepreviewfollowers {
+            flex: 1;
+        }
+
+        .profilepreviewfollowbutton {
+            a {
+                @include btn;
+            }
+        }
+    }
 
 }
