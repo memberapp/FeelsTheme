@@ -95,12 +95,12 @@
   float: right;
   text-transform: uppercase;
   border-radius: $border-radius-regular;
-  border: 1px solid darken($theme-secondary, 10);
+  border: 1px solid $theme-secondary;
   background: $theme-secondary;
   padding: 0.5rem 1.5rem;
 
   &:hover {
-    background: darken($theme-secondary, 10);
+    background: darken($theme-secondary, 5);
     color: $white;
   }
 
