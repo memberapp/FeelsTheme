@@ -132,6 +132,21 @@
   }
 }
 
+
+@mixin btn-green {
+  width: inherit;
+  width: 100%;
+  text-align: center;
+  background: $theme-success;
+  border: none;
+
+  &:hover {
+    background: darken($theme-success, 10);
+    border: none;
+  }
+}
+
+
 @mixin word-wrap() {
   overflow-wrap: break-word;
   word-wrap: break-word;

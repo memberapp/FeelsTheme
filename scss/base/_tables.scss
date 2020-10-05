@@ -19,7 +19,8 @@ table {
       th,
       td {
         border-bottom: 1px solid rgba(0, 0, 0, 0.34);
-        background: $text-divider;
+        background: $theme-secondary;
+        color: $white;
         padding: 0.5rem;
         font-weight: bold;
       }
@@ -37,7 +38,7 @@ table {
       }
 
       &:nth-child(even) {
-        background: lighten($theme-secondary, 50);
+        background: lighten($theme-secondary, 60);
       }
     }
   }

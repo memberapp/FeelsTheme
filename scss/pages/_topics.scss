@@ -81,16 +81,7 @@ tbody {
 
 
         a[id^="designate"] {
-          width: inherit;
-          width: 100%;
-          text-align: center;
-          background: #4dc846;
-          border: 1px solid darken($theme-primary, 10);
-
-          &:hover {
-            background: darken($theme-primary, 10);
-            border: 1px solid darken($theme-primary, 20);
-          }
+          @include btn-green;
         }
 
 
