@@ -63,14 +63,15 @@ img {
     height: $arrow-size;
     border: 0px;
     margin: 3px 2px 2px;
-    background: url(../img/feelstheme/grayuparrow.svg);
+    background: url(../img/feelstheme/arrow-up.svg);
+    filter: invert(55%) sepia(6%) saturate(12%) hue-rotate(358deg) brightness(90%) contrast(93%);
     background-size: $arrow-size $arrow-size;
     display: block;
   }
 
   .votearrowactivated,
   .votearrowactivateddown {
-    filter: invert(62%) sepia(82%) saturate(457%) hue-rotate(68deg) brightness(100%) contrast(81%);
+    filter: invert(49%) sepia(37%) saturate(3784%) hue-rotate(185deg) brightness(95%) contrast(93%);
   }
 
   .betweenvotesscoredown,

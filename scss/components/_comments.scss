@@ -83,6 +83,10 @@
               font-weight: bold;
               display: flex;
               align-items: center;
+
+              .score {
+                margin-right: 0.25rem;
+              }
             }
 
             .comment {
