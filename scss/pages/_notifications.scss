@@ -7,7 +7,7 @@
     .memberfilter {
       margin-left: 0;
 
-      span[id^=memberinfo0notifications] {
+      span[id^="memberinfo0notifications"] {
         display: flex;
       }
     }
@@ -19,7 +19,9 @@
     }
   }
 
-
+  .notificationtitle {
+    background-color: lighten($theme-primary, 40);
+  }
 
   .notificationtitle,
   .repost {
@@ -51,22 +53,17 @@
       }
 
       a {
-
         // &:not(:first-child):not(:last-child) {
         //   margin: 0 0.25rem;
         // }
 
         margin: 0 0.25rem;
 
-
         &.hnuser {
           margin-left: 0;
           white-space: nowrap;
         }
       }
-
-
-
     }
   }
 }

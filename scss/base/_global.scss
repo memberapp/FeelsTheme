@@ -4,11 +4,12 @@ body {
   scroll-behavior: smooth;
 
   ::-moz-selection {
-    background: rgba(134, 217, 129, 0.6);
+    background: rgba(34, 145, 235, 0.12);
+
   }
 
   ::selection {
-    background: rgba(134, 217, 129, 0.6);
+    background: rgba(34, 145, 235, 0.12);
   }
 }
 

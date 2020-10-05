@@ -46,7 +46,7 @@
       }
 
       .highlight {
-        background: rgba(77, 200, 70, .20);
+        background-color: lighten($theme-primary, 40);
       }
 
       .reply {
