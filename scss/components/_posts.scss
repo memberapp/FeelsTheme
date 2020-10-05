@@ -137,8 +137,9 @@ img {
 
   .starrating {
     margin: 0 0.25rem;
-    display: inline-block;
-    // align-items: center;
+    // display: inline-block;
+    display: flex;
+    align-items: center;
 
   }
 
