@@ -13,6 +13,7 @@ body {
 }
 
 html {
+
   &:lang(zh),
   :lang(zh-Hans),
   :lang(zh-Hant),
@@ -28,7 +29,7 @@ html {
 }
 
 .loading {
-  background-image: url(../img/puff-loader.svg);
+  background-image: url(../img/feelstheme/puff-loader.svg);
   height: calc(100vh - 61px);
   background-position: center;
   background-repeat: no-repeat;
@@ -63,8 +64,7 @@ html {
       margin-bottom: 0;
     }
 
-    a {
-    }
+    a {}
   }
 }
 

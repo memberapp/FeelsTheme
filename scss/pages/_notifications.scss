@@ -2,6 +2,8 @@
   @include container-thin;
 
   .notificationtitle {
+    background: #f0f1f3;
+
     .memberfilter {
       margin-left: 0;
 
@@ -12,7 +14,7 @@
 
     a {
       &:last-of-type {
-        margin-right: 0;
+        // margin-right: 0;
       }
     }
   }

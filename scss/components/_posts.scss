@@ -63,7 +63,7 @@ img {
     height: $arrow-size;
     border: 0px;
     margin: 3px 2px 2px;
-    background: url(../img/grayuparrow.svg);
+    background: url(../img/feelstheme/grayuparrow.svg);
     background-size: $arrow-size $arrow-size;
     display: block;
   }
@@ -129,6 +129,10 @@ img {
   display: inline-flex;
   align-items: center;
   margin-left: 0.25rem;
+
+  span[id^="memberinfo"] {
+    display: contents;
+  }
 
   .starrating {
     margin: 0 0.25rem;
@@ -300,7 +304,7 @@ img {
   [id^="permalinkthread"],
   [id^="permalinknotifications"] {
     &::before {
-      background: url(../img/link-45deg.svg);
+      background: url(../img/feelstheme/link-45deg.svg);
       background-size: $arrow-size $arrow-size;
       display: inline-block;
     }
@@ -312,7 +316,7 @@ img {
   [id^="repostlinkthread"] {
 
     // &::before {
-    //   background: url(../img/re-member.svg);
+    //   background: url(../img/feelstheme/re-member.svg);
     //   background-size: $arrow-size $arrow-size;
     //   display: inline-block;
     // }
@@ -326,7 +330,7 @@ img {
     a.remebersinactive,
     a.remebersactive {
       &::before {
-        background: url(../img/re-member.svg);
+        background: url(../img/feelstheme/re-member.svg);
         background-size: $arrow-size $arrow-size;
         display: inline-block;
       }
@@ -351,7 +355,7 @@ img {
   [id^="replylink"],
   [id^="replylinknotifications"] {
     &::before {
-      background: url(../img/chat-right-fill.svg);
+      background: url(../img/feelstheme/chat-right-fill.svg);
       background-size: $arrow-size $arrow-size;
       display: inline-block;
     }
@@ -359,7 +363,7 @@ img {
 
   a[href^="#thread?"] {
     &::before {
-      background: url(../img/chat-left-fill.svg);
+      background: url(../img/feelstheme/chat-left-fill.svg);
       background-size: $arrow-size $arrow-size;
       display: inline-block;
     }
@@ -370,7 +374,7 @@ img {
   a[id^="tiplinkmemberposts"],
   a[id^="tiplinknotifications"] {
     &::before {
-      background: url(../img/tip.svg);
+      background: url(../img/feelstheme/tip.svg);
       background-size: $arrow-size $arrow-size;
       display: inline-block;
       -webkit-transition: filter 1s ease-in-out;
@@ -392,7 +396,7 @@ img {
   a[id^="articlelinkposts"],
   a[id^="articlelinkthread"] {
     &::before {
-      background: url(../img/file-earmark-medical-fill.svg);
+      background: url(../img/feelstheme/file-earmark-medical-fill.svg);
       background-size: $arrow-size $arrow-size;
       display: inline-block;
     }

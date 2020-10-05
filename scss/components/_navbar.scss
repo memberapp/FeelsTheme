@@ -41,22 +41,52 @@ header {
         align-items: center;
         height: auto;
         user-select: none;
+        flex: 1;
+        // display: contents;
 
         a {
           width: max-content;
 
           img {
-            margin-top: 0;
             outline: none;
-            height: 2.4rem;
-            width: 2.4rem;
-
-            @include media(">desktop") {
-              height: 2rem;
-              width: 2rem;
-            }
           }
         }
+
+        .memberlogoimagefull {
+          display: none;
+
+          @include media(">desktop") {
+            display: block;
+            height: 1.5rem;
+            width: auto;
+          }
+        }
+
+        .memberlogoimage {
+          display: block;
+          height: 3rem;
+          width: 3rem;
+
+          @include media(">desktop") {
+            display: none;
+          }
+        }
+
+        // a {
+        //   width: max-content;
+
+        //   img {
+        //     margin-top: 0;
+        //     outline: none;
+        //     height: 2.4rem;
+        //     width: 2.4rem;
+
+        //     @include media(">desktop") {
+        //       height: 2rem;
+        //       width: 2rem;
+        //     }
+        //   }
+        // }
       }
 
       .membertext {
