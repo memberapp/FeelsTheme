@@ -98,10 +98,13 @@
   border: 1px solid $theme-secondary;
   background: $theme-secondary;
   padding: 0.5rem 1.5rem;
+  border: transparent;
+  font-weight: 400;
 
   &:hover {
     background: darken($theme-secondary, 5);
     color: $white;
+    border: transparent;
   }
 
   &:disabled {
@@ -111,6 +114,7 @@
 
 @mixin btn-outline {
   line-height: 1.2;
+  font-weight: 400;
   cursor: pointer;
   text-decoration: none;
   transition: all 0.15s ease-in-out;
@@ -138,14 +142,23 @@
   width: 100%;
   text-align: center;
   background: $theme-success;
-  border: none;
+  border: transparent;
 
   &:hover {
     background: darken($theme-success, 10);
-    border: none;
+    border: transparent;
   }
 }
 
+@mixin btn-red {
+  background-color: $theme-danger;
+  border: transparent;
+
+  &:hover {
+    background: darken($theme-danger, 10);
+    border: transparent;
+  }
+}
 
 @mixin word-wrap() {
   overflow-wrap: break-word;

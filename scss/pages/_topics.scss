@@ -69,13 +69,7 @@ tbody {
         margin-bottom: 1rem;
 
         a.unsub {
-          background-color: $theme-danger;
-          border: 1px solid darken($theme-danger, 10);
-
-          &:hover {
-            background: darken($theme-danger, 10);
-            border: 1px solid darken($theme-danger, 20);
-          }
+          @include btn-red;
 
         }
 
