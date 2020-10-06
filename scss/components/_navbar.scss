@@ -112,6 +112,8 @@ header {
       .membertext,
       .memberlogo {
         transition: all 0.15s ease-in-out;
+        display: flex;
+        align-items: center;
 
         &:hover {
           opacity: 0.8;
