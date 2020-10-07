@@ -126,28 +126,6 @@ img {
   margin-top: 1rem;
 }
 
-.memberfilter {
-  display: inline-flex;
-  align-items: center;
-  margin-left: 0.25rem;
-
-  span[id^="memberinfo"] {
-    display: contents;
-  }
-
-  .starrating {
-    margin: 0 0.25rem;
-    // display: inline-block;
-    display: flex;
-    align-items: center;
-
-  }
-
-  .hnuser {
-    display: inline-flex !important;
-    align-items: center;
-  }
-}
 
 .notificationtitle,
 .repost {

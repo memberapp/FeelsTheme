@@ -1,0 +1,46 @@
+.memberfilter {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 0;
+
+    span[id^="memberinfo"] {
+        display: contents;
+    }
+
+    span[id^="memberinfo0notifications"] {
+        display: flex;
+    }
+
+
+    .starrating {
+        margin: 0 0.25rem;
+        // display: inline-block;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .hnuser {
+        display: inline-flex !important;
+        align-items: center;
+    }
+}
+
+
+.notificationtitle,
+.repost {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+
+    .age,
+    .sats {
+        margin-right: 0.25rem;
+    }
+
+    a[href^="#thread?"] {
+        margin-right: 0.25rem;
+    }
+
+}

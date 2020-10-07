@@ -4,13 +4,7 @@
   .notificationtitle {
     background: #f0f1f3;
 
-    .memberfilter {
-      margin-left: 0;
 
-      span[id^="memberinfo0notifications"] {
-        display: flex;
-      }
-    }
 
     a {
       &:last-of-type {
@@ -23,17 +17,7 @@
     background-color: lighten($theme-primary, 40);
   }
 
-  .notificationtitle,
-  .repost {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
 
-    .age {
-      margin-left: 0.25rem;
-    }
-  }
 
   ul.notificationslist {
     padding: 0;
@@ -57,12 +41,12 @@
         //   margin: 0 0.25rem;
         // }
 
-        margin: 0 0.25rem;
+        // margin: 0 0.25rem;
 
-        &.hnuser {
-          margin-left: 0;
-          white-space: nowrap;
-        }
+        // &.hnuser {
+        //   margin-left: 0;
+        //   white-space: nowrap;
+        // }
       }
     }
   }
