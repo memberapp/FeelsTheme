@@ -31,18 +31,14 @@
 
         .member-handle {
             font-weight: bold;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            max-width: 200px;
+
+
         }
 
         .member-pagingid {
             font-weight: 400;
             color: $text-secondary;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
+
             max-width: 100%;
         }
 

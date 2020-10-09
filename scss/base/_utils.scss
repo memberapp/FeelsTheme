@@ -124,3 +124,12 @@ img {
 .settingspicturelarge {
   margin: 0 auto;
 }
+
+
+.member-handle,
+.member-pagingid {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+  white-space: nowrap;
+}

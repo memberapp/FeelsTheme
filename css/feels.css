@@ -385,6 +385,13 @@ img {
 .settingspicturelarge {
   margin: 0 auto; }
 
+.member-handle,
+.member-pagingid {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+  white-space: nowrap; }
+
 body {
   background: #f7f7f7;
   position: relative;
@@ -1837,17 +1844,10 @@ footer {
     margin-bottom: 0.5rem;
     color: rgba(0, 0, 0, 0.87); }
     .profilepreview .profile-meta .member-handle {
-      font-weight: bold;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      max-width: 200px; }
+      font-weight: bold; }
     .profilepreview .profile-meta .member-pagingid {
       font-weight: 400;
       color: rgba(0, 0, 0, 0.54);
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
       max-width: 100%; }
     .profilepreview .profile-meta a:last-of-type {
       width: 100%; }
