@@ -102,6 +102,7 @@ img {
   display: flex !important;
   align-items: center !important;
   margin-right: 0.25rem;
+  width: 2rem;
 
   .memberpicturesmall {
     height: 2rem;
@@ -130,6 +131,11 @@ img {
 .member-pagingid {
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: 200px;
   white-space: nowrap;
+  max-width: 70px;
+
+  @include media(">phone") {
+    max-width: 200px;
+  }
+
 }
