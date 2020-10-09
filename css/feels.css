@@ -1510,8 +1510,8 @@ header {
               width: auto; } }
         header .pagetop nav .memberlogo .memberlogoimage {
           display: block;
-          height: 3rem;
-          width: 3rem; }
+          height: 2.2rem;
+          width: 2.2rem; }
           @media (min-width: 1025px) {
             header .pagetop nav .memberlogo .memberlogoimage {
               display: none; } }
