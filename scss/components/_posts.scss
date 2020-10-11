@@ -208,13 +208,17 @@ img {
         display: flex;
         flex-wrap: wrap;
 
+        .plaintext, .age{
+          margin-right: 0.25rem;
+        }
+
         a {
           display: inline-block;
         }
 
-        .age {
-          margin: 0 0.25rem;
-        }
+        // .age {
+        //   margin: 0 0.25rem;
+        // }
       }
     }
   }
@@ -421,8 +425,8 @@ img {
       display: inline-block;
     }
 
-    .age {
-      margin: 0 0.25rem;
-    }
+    // .age {
+    //   margin: 0 0.25rem;
+    // }
   }
 }
