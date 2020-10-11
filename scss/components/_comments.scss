@@ -38,6 +38,26 @@
     li {
       list-style-type: none;
 
+
+      .comhead {
+        font-size: 0.75rem;
+        color: rgba(0, 0, 0, 0.54);
+        margin-bottom: 0.5rem;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .score {
+          margin-right: 0.25rem;
+        }
+
+        .memberfilter {
+          margin-left: 0.25rem;
+        }
+      }
+      
+
       &.collapsed {
         margin-left: 2.25rem;
         font-size: $font-size-tiny;
@@ -76,23 +96,7 @@
             padding: $base-padding $base-padding $base-padding 0;
             width: 100%;
 
-            .comhead {
-              font-size: 0.75rem;
-              color: rgba(0, 0, 0, 0.54);
-              margin-bottom: 0.5rem;
-              font-weight: bold;
-              display: flex;
-              align-items: center;
-              flex-wrap: wrap;
-
-              .score {
-                margin-right: 0.25rem;
-              }
-
-              .memberfilter {
-                margin-left: 0.25rem;
-              }
-            }
+           
 
             .comment {
               font-size: 1rem;

@@ -1357,6 +1357,21 @@ img {
     margin: 0; }
     .comment-tree ul li {
       list-style-type: none; }
+      .comment-tree ul li .comhead {
+        font-size: 0.75rem;
+        color: rgba(0, 0, 0, 0.54);
+        margin-bottom: 0.5rem;
+        font-weight: bold;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+        .comment-tree ul li .comhead .score {
+          margin-right: 0.25rem; }
+        .comment-tree ul li .comhead .memberfilter {
+          margin-left: 0.25rem; }
       .comment-tree ul li.collapsed {
         margin-left: 2.25rem;
         font-size: 0.75rem;
@@ -1384,21 +1399,6 @@ img {
           .comment-tree ul li .reply div:only-child .commentdetails {
             padding: 0.875rem 0.875rem 0.875rem 0;
             width: 100%; }
-            .comment-tree ul li .reply div:only-child .commentdetails .comhead {
-              font-size: 0.75rem;
-              color: rgba(0, 0, 0, 0.54);
-              margin-bottom: 0.5rem;
-              font-weight: bold;
-              display: -ms-flexbox;
-              display: flex;
-              -ms-flex-align: center;
-              align-items: center;
-              -ms-flex-wrap: wrap;
-              flex-wrap: wrap; }
-              .comment-tree ul li .reply div:only-child .commentdetails .comhead .score {
-                margin-right: 0.25rem; }
-              .comment-tree ul li .reply div:only-child .commentdetails .comhead .memberfilter {
-                margin-left: 0.25rem; }
             .comment-tree ul li .reply div:only-child .commentdetails .comment {
               font-size: 1rem; }
               .comment-tree ul li .reply div:only-child .commentdetails .comment .commentbody {
