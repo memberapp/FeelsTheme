@@ -663,6 +663,9 @@ html :lang(ar) {
   border: 1px solid #ffd712;
   border-radius: 0.25rem; }
 
+.plaintext, .age {
+  margin-right: 0.25rem; }
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
@@ -1160,8 +1163,6 @@ img {
         display: flex;
         -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
-        .post .postdetails .subtext .submitter .plaintext, .post .postdetails .subtext .submitter .age {
-          margin-right: 0.25rem; }
         .post .postdetails .subtext .submitter a {
           display: inline-block; }
 
