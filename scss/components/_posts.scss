@@ -168,6 +168,7 @@ img {
 
         a {
           color: rgba(0, 0, 0, 0.76);
+          overflow-wrap: anywhere;
         }
 
         a[href]:not([href^="#thread?"]) {
@@ -226,8 +227,8 @@ img {
   display: flex;
   // justify-content: space-between;
   flex-flow: row wrap;
-
-  font-size: 0.75rem;
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 0.75rem; 
   display: flex;
 
   a {
@@ -257,7 +258,7 @@ img {
       }
     }
 
-    margin-right: 0.5rem;
+    margin-right: 0.25rem;
     color: $text-secondary;
 
     &:hover {
@@ -266,7 +267,7 @@ img {
   }
 
   span.score {
-    margin-right: 0.5rem;
+    // margin-right: 0.5rem;
     cursor: pointer;
     transition: filter 1s ease-in-out;
 
@@ -275,8 +276,8 @@ img {
       color: $text-primary;
     }
 
-    .likescounttext {
-      margin-right: 0.15rem;
+    .likescounttext, .tipscounttext {
+      margin-right: 0.25rem;
     }
   }
 
@@ -305,7 +306,7 @@ img {
 
 
   .rememberscounttext {
-    margin-right: 0.15rem;
+    margin-right: 0.25rem;
 
     a.remebersinactive,
     a.remebersactive {
@@ -325,7 +326,7 @@ img {
     }
 
     .repostscount {
-      margin-right: 0.15rem;
+      margin-right: 0.25rem;
     }
 
   }

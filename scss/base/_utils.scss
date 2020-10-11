@@ -1,8 +1,6 @@
 img {
   width: 100%;
   height: auto;
-
-
 }
 
 .imgurimage {
@@ -26,15 +24,10 @@ img {
   background-position: 0 0, $cubeSize $cubeSize;
 }
 
-
-
-
 .jdenticon {
   height: 2rem;
   width: 2rem;
   margin-right: 0.25rem;
-  // margin-bottom: -3px;
-
 }
 
 .jdenticonlarge {
@@ -43,7 +36,6 @@ img {
 }
 
 /*! Remove newlines for links*/
-
 .post .postdetails .title a[href]:not([href^="#thread?"]) {
   padding-bottom: 0rem;
   display: inline;
