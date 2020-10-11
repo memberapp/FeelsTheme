@@ -124,7 +124,7 @@ img {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  max-width: 70px;
+  max-width: 100px;
 
   @include media(">phone") {
     max-width: 200px;
