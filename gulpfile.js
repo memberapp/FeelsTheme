@@ -12,10 +12,10 @@ var autoprefixer = require("gulp-autoprefixer");
 var inlineCss = require("gulp-inline-css");
 
 gulp.task("watch", function () {
-  gulp.watch("scss/**/*.scss", ["sass-site"]);
+  gulp.watch("scss/**/*.scss", ["feels-theme", "feels-theme-night"]);
 });
 
-gulp.task("sass-site", function () {
+gulp.task("feels-theme", function () {
   return (
     gulp
     .src("scss/feels.scss")
@@ -41,6 +41,37 @@ gulp.task("sass-site", function () {
     .pipe(gulp.dest("../memberdev/css/"))
   );
 });
+
+
+gulp.task("feels-theme-night", function () {
+  return (
+    gulp
+    .src("scss/feels-night.scss")
+    .pipe(plumber())
+    .pipe(
+      sass({
+        includePaths: ["./scss/**/*"]
+      }, {
+        errLogToConsole: true
+      })
+    )
+    .on("error", reportError)
+    .pipe(
+      autoprefixer({
+        browsers: ["last 2 versions"],
+        cascade: false,
+      })
+    )
+    .pipe(concat("feels-night.css"))
+    // .pipe(uglifyCss()) // minify css
+    .pipe(gulp.dest("./css/"))
+    // .pipe(uglifyCss()) // minify css
+    .pipe(gulp.dest("../memberdev/css/"))
+
+    
+  );
+});
+
 
 /// error handeling
 var reportError = function (error) {
