@@ -227,7 +227,7 @@ img {
   display: flex;
   // justify-content: space-between;
   flex-flow: row wrap;
-  color: rgba(0, 0, 0, 0.54);
+  color: $text-secondary;
   font-size: 0.75rem; 
   display: flex;
 
@@ -247,7 +247,10 @@ img {
       border: 0px;
       margin: 3px 6px 2px 0;
       display: none;
-      filter: opacity(0.5);
+
+      filter: $subtextbuttons;
+
+      // filter: opacity(0.5);
       transition: filter 1s ease-in-out;
       content: "";
     }
