@@ -217,6 +217,7 @@ header {
         left: 0.8rem;
         position: absolute !important;
         height: auto !important;
+        white-space: nowrap;
 
         &:empty {
           display: none !important;
