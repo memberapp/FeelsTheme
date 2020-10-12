@@ -49,7 +49,7 @@
 }
 
 @mixin card {
-  background: $white;
+  background: $bg-default;
   border: 1px solid $text-divider;
   border-radius: $border-radius-regular;
   margin-bottom: 1.5rem;

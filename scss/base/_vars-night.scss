@@ -10,10 +10,10 @@ $theme-warning: #FFE45E;
 $white: white;
 $black: black;
 
-$text-primary: rgba(0, 0, 0, 0.87);
-$text-secondary: rgba(0, 0, 0, 0.54);
-$text-hint: rgba(0, 0, 0, 0.38);
-$text-divider: rgba(0, 0, 0, 0.12);
+$text-primary: rgba(255, 255, 255, 1);
+$text-secondary: rgba(255, 255, 255, 0.80);
+$text-hint: rgba(255, 255, 255, 0.50);
+$text-divider: rgba(255, 255, 255, 0.38);
 
 $font-size-normal: 1rem;
 $font-size-small: 0.875rem;
@@ -21,4 +21,8 @@ $font-size-tiny: 0.75rem;
 
 $border-radius-regular: 0.25rem;
 
-$bg-color: #f7f7f7;
+$bg-color: #1F1F1F;
+
+$bg-default: $black;
+
+$votelinks-bg: #474747;

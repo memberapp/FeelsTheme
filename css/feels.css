@@ -1143,7 +1143,7 @@ img {
       word-break: break-word;
       cursor: default; }
       .post .postdetails .title p a {
-        color: rgba(0, 0, 0, 0.76);
+        color: rgba(0, 0, 0, 0.87);
         overflow-wrap: anywhere; }
       .post .postdetails .title p a[href]:not([href^="#thread?"]) {
         color: #1063A8;
