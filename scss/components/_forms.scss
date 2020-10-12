@@ -14,7 +14,7 @@ input {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #495057;
+  color: $text-primary;
   background-color: $form-bg;
   background-clip: padding-box;
   border: 1px solid $text-hint;
@@ -23,7 +23,7 @@ input {
   box-sizing: border-box;
 
   &:focus {
-    color: #495057;
+    color: $text-primary;
     background-color: $form-bg;
     border-color: lighten($theme-secondary, 10);
     outline: 0;
@@ -47,7 +47,7 @@ select {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #495057;
+  color: $text-primary;
   background-color: $form-bg;
   background-clip: padding-box;
   border: 1px solid $text-hint;
