@@ -2,9 +2,9 @@
   @include container-thin;
 
   .notificationtitle {
-    background: #f0f1f3;
+    background: $votelinks-bg;
 
-
+ 
 
     a {
       &:last-of-type {
@@ -13,9 +13,9 @@
     }
   }
 
-  .notificationtitle {
-    background-color: lighten($theme-primary, 40);
-  }
+  // .notificationtitle {
+  //   background-color: lighten($theme-primary, 40);
+  // }
 
 
 
