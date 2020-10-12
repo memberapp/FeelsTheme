@@ -15,16 +15,16 @@ input {
   font-weight: 400;
   line-height: 1.5;
   color: #495057;
-  background-color: $white;
+  background-color: $form-bg;
   background-clip: padding-box;
-  border: 1px solid #ced4da;
+  border: 1px solid $text-hint;
   border-radius: $border-radius-regular;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   box-sizing: border-box;
 
   &:focus {
     color: #495057;
-    background-color: $white;
+    background-color: $form-bg;
     border-color: lighten($theme-secondary, 10);
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
@@ -48,15 +48,15 @@ select {
   font-weight: 400;
   line-height: 1.5;
   color: #495057;
-  background-color: #fff;
+  background-color: $form-bg;
   background-clip: padding-box;
-  border: 1px solid #ced4da;
+  border: 1px solid $text-hint;
   border-radius: $border-radius-regular;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 
   &:focus {
     color: #495057;
-    background-color: #fff;
+    background-color: $form-bg;
     border-color: lighten($theme-secondary, 10);
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
