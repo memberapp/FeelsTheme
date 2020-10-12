@@ -38,7 +38,7 @@ table {
       }
 
       &:nth-child(even) {
-        background: lighten($theme-secondary, 60);
+        background: $table-even;
       }
     }
   }
