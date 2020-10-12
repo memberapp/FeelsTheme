@@ -28,11 +28,14 @@ img {
   height: 2rem;
   width: 2rem;
   margin-right: 0.25rem;
+  background: $white;
+  border-radius: 100%;
 }
 
 .jdenticonlarge {
   width: 100px;
   height: 100px;
+  background: $white;
 }
 
 /*! Remove newlines for links*/
