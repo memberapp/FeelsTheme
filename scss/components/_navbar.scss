@@ -155,7 +155,7 @@ header {
         a {
           &:hover {
             // background-color: rgba(0, 0, 0, 0.06);
-            background-color: lighten($theme-primary, 40);
+            background-color: $nav-hover;
             // border-bottom: 4px solid $text-divider;
           }
         }
