@@ -30,3 +30,7 @@ $bg-footer: $bg-default;
 $votelinks-bg: #474747;
 
 $subtextbuttons: invert(1);
+
+$nav-gradient: linear-gradient(270deg,
+$black 0%,
+rgba(255, 255, 255, 0) 100%);
