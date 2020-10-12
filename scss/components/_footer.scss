@@ -33,17 +33,17 @@ footer {
     flex-wrap: wrap;
 
     .separatorwide {
-      border-right: 1px solid rgba(0, 0, 0, 0.36);
+      border-right: 1px solid $text-divider;
       margin-right: 1rem;
       padding-right: 1rem;
     }
 
     a,
     .vavilon {
-      color: rgba(0, 0, 0, 0.76);
+      color: $text-secondary;
 
       &:hover {
-        color: rgba(0, 0, 0, 0.96);
+        color: $text-primary;
       }
     }
 
