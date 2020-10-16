@@ -2951,7 +2951,8 @@ tbody tr td .filterprovider {
         border-bottom: 1px solid rgba(0, 0, 0, 0.12); } }
     #map .leaflet-popup-pane .leaflet-popup .leaflet-popup-content-wrapper .leaflet-popup-content {
       max-height: 400px;
-      overflow: scroll;
+      overflow-x: hidden;
+      overflow-y: scroll;
       margin: 0; }
       #map .leaflet-popup-pane .leaflet-popup .leaflet-popup-content-wrapper .leaflet-popup-content .postdetails {
         font-weight: bold; }
@@ -2972,7 +2973,7 @@ tbody tr td .filterprovider {
   #map .leaflet-popup-pane .leaflet-popup a.leaflet-popup-close-button {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 0.5rem;
     padding: 0.5rem;
     border: none;
     text-align: center;
