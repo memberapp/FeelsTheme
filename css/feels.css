@@ -834,7 +834,7 @@ input {
   input:focus {
     color: rgba(0, 0, 0, 0.87);
     background-color: white;
-    border-color: #147ed7;
+    border-color: #2291EB;
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
   textarea:disabled,
@@ -873,7 +873,7 @@ select {
   select:focus {
     color: #495057;
     background-color: white;
-    border-color: #147ed7;
+    border-color: #2291EB;
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
 

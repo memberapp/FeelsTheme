@@ -25,7 +25,7 @@ input {
   &:focus {
     color: $text-primary;
     background-color: $form-bg;
-    border-color: lighten($theme-secondary, 10);
+    border-color: $theme-primary;
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
   }
@@ -69,7 +69,7 @@ select {
   &:focus {
     color: #495057;
     background-color: $form-bg;
-    border-color: lighten($theme-secondary, 10);
+    border-color: $theme-primary;
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
   }
