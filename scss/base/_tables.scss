@@ -15,10 +15,10 @@ table {
 
   thead {
     tr {
-
+      border-bottom: 1px solid $text-divider;
       th,
       td {
-        border-bottom: 1px solid rgba(0, 0, 0, 0.34);
+       
         background: $theme-secondary;
         color: $white;
         padding: 0.5rem;
@@ -32,8 +32,8 @@ table {
     display: contents;
 
     tr {
+      border-bottom: 1px solid $text-divider;
       td {
-        border-bottom: 1px solid $text-divider;
         padding: 0.5rem;
       }
 
