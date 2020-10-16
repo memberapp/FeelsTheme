@@ -54,9 +54,9 @@ html {
     flex-direction: column;
     align-items: center;
     flex: 1;
-    border: 1px solid rgba(0, 0, 0, 0.37);
+    border: 1px solid $text-hint;
     border-radius: $border-radius-regular;
-
+ 
     &:first-of-type {
       // margin: 0;
     }
