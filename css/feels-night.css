@@ -1214,9 +1214,8 @@ img {
     position: relative;
     display: -ms-flexbox;
     display: flex;
-    margin-right: 1rem;
+    margin-right: 0.725rem;
     transition: all 0.15s ease-in-out;
-    margin-right: 0.25rem;
     color: rgba(255, 255, 255, 0.8); }
     .postdetails .subtextbuttons a::before,
     .comment-tree ul li .reply div .subtextbuttons a::before {
@@ -1236,6 +1235,7 @@ img {
       color: white; }
   .postdetails .subtextbuttons span.score,
   .comment-tree ul li .reply div .subtextbuttons span.score {
+    margin-right: 0.725rem;
     cursor: pointer;
     transition: filter 1s ease-in-out; }
     .postdetails .subtextbuttons span.score:hover,
@@ -1288,6 +1288,13 @@ img {
   .postdetails .subtextbuttons a[href^="#thread?"]::before,
   .comment-tree ul li .reply div .subtextbuttons a[href^="#thread?"]::before {
     background: url(../img/feelstheme/chat-left-fill.svg);
+    background-size: 0.875rem 0.875rem;
+    display: inline-block; }
+  .postdetails .subtextbuttons a[id^="quotelinkthread"]::before,
+  .postdetails .subtextbuttons a[id^="quotelinkposts"]::before,
+  .comment-tree ul li .reply div .subtextbuttons a[id^="quotelinkthread"]::before,
+  .comment-tree ul li .reply div .subtextbuttons a[id^="quotelinkposts"]::before {
+    background: url(../img/feelstheme/quote.svg);
     background-size: 0.875rem 0.875rem;
     display: inline-block; }
   .postdetails .subtextbuttons a[id^="tiplinkposts"]::before,

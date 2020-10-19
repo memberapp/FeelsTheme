@@ -248,8 +248,10 @@ img {
   a {
     position: relative;
     display: flex;
-    margin-right: 1rem;
+    margin-right: 0.725rem;
     transition: all 0.15s ease-in-out;
+    color: $text-secondary;
+
 
     &:last-of-type {
       // margin-right: 0;
@@ -275,16 +277,14 @@ img {
       }
     }
 
-    margin-right: 0.25rem;
-    color: $text-secondary;
-
+   
     &:hover {
       color: $text-primary;
     }
   }
 
   span.score {
-    // margin-right: 0.5rem;
+    margin-right: 0.725rem;
     cursor: pointer;
     transition: filter 1s ease-in-out;
 
@@ -362,6 +362,15 @@ img {
   a[href^="#thread?"] {
     &::before {
       background: url(../img/feelstheme/chat-left-fill.svg);
+      background-size: $arrow-size $arrow-size;
+      display: inline-block;
+    }
+  }
+
+  a[id^="quotelinkthread"],
+  a[id^="quotelinkposts"]  {
+    &::before {
+      background: url(../img/feelstheme/quote.svg);
       background-size: $arrow-size $arrow-size;
       display: inline-block;
     }
