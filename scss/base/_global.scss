@@ -137,6 +137,7 @@ html {
   font-weight: bold;
   padding: 1rem;
   background: $theme-warning;
+  color: darken($theme-warning, 55);
   border: 1px solid darken($theme-warning, 15);
   border-radius: 0.25rem;
 }
