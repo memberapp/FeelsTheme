@@ -1409,7 +1409,10 @@ img {
         margin-left: 2.25rem;
         font-size: 0.75rem;
         padding: 0.4375rem 0;
-        font-weight: bold; }
+        font-weight: bold;
+        left: 0.85em;
+        position: relative;
+        top: 0.65em; }
       .comment-tree ul li .highlight {
         background-color: rgba(255, 255, 255, 0.38); }
       .comment-tree ul li .reply {
