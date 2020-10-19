@@ -93,6 +93,12 @@
     @include card;
     padding: $base-padding * 2;
 
+
+#trustgraphdetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
     br {
       display: none;
     }
@@ -101,69 +107,68 @@
       width: 100%;
     }
 
-    #trustgraphdetails {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      table {
-        @include media("<tablet") {
-          thead {
-            display: none;
-          }
-
-          tr {
-            display: table;
-            margin-bottom: 1.5rem;
-            width: 100%;
-            border-radius: 0.5rem;
-            background: rgba(0, 0, 0, 0.05);
-            border-bottom: 0;
-
-            &:nth-child(even) {
-              background: $text-divider;
-            }
-          }
-
-          td {
-            display: table-row;
-          }
-
-          td:before,
-          td>span {
-            display: table-cell;
-            padding: 0.5rem 1rem;
-          }
-
-          td:before {
-            content: attr(data-label);
-            font-weight: 400;
-            text-align: left;
-            color: $text-secondary;
-            width: 50%;
-          }
-
-          td:not(.align-start)>span {
-            vertical-align: middle;
-            text-align: left;
-          }
-
-          td:last-of-type {
-            border-bottom: none;
-          }
-        }
-      }
-
-      #overall {
-        margin-bottom: 1rem;
-      }
-    }
-
     #trustgraphnotes {
       margin-top: 1rem;
       // padding-top: 1rem;
+      text-align: center;
       // border-top: 1px solid $text-divider;
       @include assistive-text;
     }
+  }
+}
+
+
+#trustgraphdetails, #anchorratings, #community {
+
+  table {
+    @include media("<tablet") {
+      thead {
+        display: none;
+      }
+
+      tr {
+        display: table;
+        margin-bottom: 1.5rem;
+        width: 100%;
+        border-radius: 0.5rem;
+        background: rgba(0, 0, 0, 0.05);
+        border-bottom: 0;
+
+        &:nth-child(even) {
+          background: $text-divider;
+        }
+      }
+
+      td {
+        display: table-row;
+      }
+
+      td:before,
+      td>span {
+        display: table-cell;
+        padding: 0.5rem 1rem;
+      }
+
+      td:before {
+        content: attr(data-label);
+        font-weight: 400;
+        text-align: left;
+        color: $text-secondary;
+        width: 50%;
+      }
+
+      td:not(.align-start)>span {
+        vertical-align: middle;
+        text-align: left;
+      }
+
+      td:last-of-type {
+        border-bottom: none;
+      }
+    }
+  }
+
+  #overall {
+    margin-bottom: 1rem;
   }
 }
