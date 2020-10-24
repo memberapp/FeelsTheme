@@ -161,3 +161,12 @@ a{
   }
 
 }
+
+
+.quotepost{
+  border: 1px solid $text-hint;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 0px;
+  margin: 0.25rem;
+}
