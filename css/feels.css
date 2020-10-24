@@ -1818,7 +1818,7 @@ footer {
     margin-right: auto;
     margin-left: auto;
     text-align: center;
-    color: black; }
+    color: rgba(0, 0, 0, 0.87); }
     @media (min-width: 769px) {
       #lowfundswarning .content {
         max-width: 800px; } }

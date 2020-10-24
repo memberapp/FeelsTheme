@@ -662,9 +662,9 @@ html :lang(ar) {
   text-align: center;
   font-weight: bold;
   padding: 1rem;
-  background: #FFE45E;
-  color: #453900;
-  border: 1px solid #ffd712;
+  background: #3D3300;
+  color: black;
+  border: 1px solid black;
   border-radius: 0.25rem; }
 
 .plaintext, .age {
@@ -1803,7 +1803,7 @@ footer {
       width: 100%; }
 
 #lowfundswarning {
-  background: #FFE45E;
+  background: #3D3300;
   padding: 1.75rem 0;
   margin-top: -1rem;
   margin-bottom: 2rem; }
@@ -1818,7 +1818,7 @@ footer {
     margin-right: auto;
     margin-left: auto;
     text-align: center;
-    color: black; }
+    color: white; }
     @media (min-width: 769px) {
       #lowfundswarning .content {
         max-width: 800px; } }
@@ -2451,7 +2451,7 @@ body.article {
         margin-top: 0.875rem; }
     #loginbox .content #newseedphrase {
       border: 1px solid rgba(255, 255, 255, 0.38);
-      background: #FFE45E;
+      background: #3D3300;
       border-radius: 0.25rem;
       padding: 0.4375rem 0.875rem;
       margin: 1rem 0; }
