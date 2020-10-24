@@ -1005,24 +1005,6 @@ textarea {
     border-radius: 0.25rem;
     margin-left: 0.25rem; }
 
-.notificationtitle,
-.repost {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-  align-items: center;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  width: 100%; }
-  .notificationtitle .age,
-  .notificationtitle .sats,
-  .repost .age,
-  .repost .sats {
-    margin-right: 0.25rem; }
-  .notificationtitle a[href^="#thread?"],
-  .repost a[href^="#thread?"] {
-    margin-right: 0.25rem; }
-
 a {
   text-decoration: none;
   transition: all 0.15s ease-in-out;
@@ -1106,6 +1088,16 @@ img {
     width: 100%;
     max-width: 550px; }
 
+video {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  margin: 0 auto;
+  display: block; }
+  video.imgurimage {
+    background-color: black;
+    background-image: unset; }
+
 .youtubepreview {
   position: relative;
   display: -ms-flexbox;
@@ -1143,16 +1135,29 @@ img {
 
 .notificationtitle,
 .repost {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
   padding: 0.875rem;
   font-weight: bold;
   font-size: 0.875rem;
   background: #f8f9fa;
   border-bottom: 1px solid rgba(0, 0, 0, 0.12);
   width: 100%;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: center;
   align-items: center; }
+  .notificationtitle .age,
+  .notificationtitle .sats,
+  .repost .age,
+  .repost .sats {
+    margin-right: 0.25rem; }
+  .notificationtitle a[href^="#thread?"],
+  .repost a[href^="#thread?"] {
+    margin-right: 0.25rem; }
   .notificationtitle .hnuser,
   .notificationtitle .star-rating,
   .repost .hnuser,

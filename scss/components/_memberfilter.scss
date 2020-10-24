@@ -35,20 +35,3 @@
 }
 
 
-.notificationtitle,
-.repost {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
-
-    .age,
-    .sats {
-        margin-right: 0.25rem;
-    }
-
-    a[href^="#thread?"] {
-        margin-right: 0.25rem;
-    }
-
-}

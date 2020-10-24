@@ -97,6 +97,18 @@ img {
   }
 }
 
+video{
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  margin: 0 auto;
+  display: block;
+  &.imgurimage{
+    background-color: $black;
+    background-image: unset;
+  }
+}
+
 .youtubepreview {
   position: relative;
   display: flex;
@@ -141,26 +153,41 @@ img {
 }
 
 
+
 .notificationtitle,
 .repost {
-  padding: $base-padding;
-  font-weight: bold;
-  font-size: $font-size-small;
-  background:$votelinks-bg;
-  border-bottom: 1px solid $text-divider;
-  width: 100%;
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: $base-padding;
+    font-weight: bold;
+    font-size: $font-size-small;
+    background:$votelinks-bg;
+    border-bottom: 1px solid $text-divider;
+    width: 100%;
+    display: flex;
+    align-items: center;
 
+    .age,
+    .sats {
+        margin-right: 0.25rem;
+    }
 
+    a[href^="#thread?"] {
+        margin-right: 0.25rem;
+    }
 
-  .hnuser,
+    .hnuser,
   .star-rating {
     margin-right: 0.25rem;
     display: flex;
     align-items: center;
   }
+
 }
+
+
 
 .post {
   display: flex;
