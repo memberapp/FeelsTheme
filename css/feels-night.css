@@ -2104,6 +2104,10 @@ footer {
         border-left: 0;
         border-right: 0;
         border-bottom: 1px solid rgba(255, 255, 255, 0.38); } }
+  #thread .itemlist .nocommentsyet {
+    text-align: center;
+    font-style: italic;
+    color: white; }
 
 #newpost {
   width: 100%;

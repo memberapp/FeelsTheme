@@ -9,6 +9,14 @@
     .fatitem {
       @include card;
 
+     
+
+    }
+
+    .nocommentsyet{
+      text-align: center;
+      font-style: italic;
+      color: $text-primary;
     }
   }
 }
