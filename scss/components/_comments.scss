@@ -107,6 +107,17 @@
                 a {
                   overflow-wrap: anywhere;
                 }
+
+                ul li {
+                  list-style-type: disc;
+                }
+
+                ol li {
+                  list-style-type: decimal;
+              }
+
+
+                
               }
             }
           }
