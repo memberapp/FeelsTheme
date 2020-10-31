@@ -544,33 +544,6 @@ html :lang(ar) {
     border: 2px solid rgba(0, 0, 0, 0.87);
     border-radius: 0.25rem;
     background: white; }
-    #settingsprofileaddress #cashaddrformatdiv img,
-    #settingsprofileaddress #legacyformatdiv img,
-    #settingsprofileaddress #privatekeyformatdiv img,
-    #settingsprofileaddress #membercashaddrformatdiv img,
-    #settingsprofileaddress #memberlegacyformatdiv img,
-    #settingslegacyprofileaddress #cashaddrformatdiv img,
-    #settingslegacyprofileaddress #legacyformatdiv img,
-    #settingslegacyprofileaddress #privatekeyformatdiv img,
-    #settingslegacyprofileaddress #membercashaddrformatdiv img,
-    #settingslegacyprofileaddress #memberlegacyformatdiv img,
-    #settingsprivatekey #cashaddrformatdiv img,
-    #settingsprivatekey #legacyformatdiv img,
-    #settingsprivatekey #privatekeyformatdiv img,
-    #settingsprivatekey #membercashaddrformatdiv img,
-    #settingsprivatekey #memberlegacyformatdiv img,
-    #membercashaddress #cashaddrformatdiv img,
-    #membercashaddress #legacyformatdiv img,
-    #membercashaddress #privatekeyformatdiv img,
-    #membercashaddress #membercashaddrformatdiv img,
-    #membercashaddress #memberlegacyformatdiv img,
-    #memberlegacyaddress #cashaddrformatdiv img,
-    #memberlegacyaddress #legacyformatdiv img,
-    #memberlegacyaddress #privatekeyformatdiv img,
-    #memberlegacyaddress #membercashaddrformatdiv img,
-    #memberlegacyaddress #memberlegacyformatdiv img {
-      height: 160px;
-      width: 160px; }
     #settingsprofileaddress #cashaddrformatdiv .qrcodeclick,
     #settingsprofileaddress #legacyformatdiv .qrcodeclick,
     #settingsprofileaddress #privatekeyformatdiv .qrcodeclick,
@@ -631,6 +604,32 @@ html :lang(ar) {
       #memberlegacyaddress #membercashaddrformatdiv .qrcodeclick:hover,
       #memberlegacyaddress #memberlegacyformatdiv .qrcodeclick:hover {
         color: #0c4879; }
+      #settingsprofileaddress #cashaddrformatdiv .qrcodeclick span,
+      #settingsprofileaddress #legacyformatdiv .qrcodeclick span,
+      #settingsprofileaddress #privatekeyformatdiv .qrcodeclick span,
+      #settingsprofileaddress #membercashaddrformatdiv .qrcodeclick span,
+      #settingsprofileaddress #memberlegacyformatdiv .qrcodeclick span,
+      #settingslegacyprofileaddress #cashaddrformatdiv .qrcodeclick span,
+      #settingslegacyprofileaddress #legacyformatdiv .qrcodeclick span,
+      #settingslegacyprofileaddress #privatekeyformatdiv .qrcodeclick span,
+      #settingslegacyprofileaddress #membercashaddrformatdiv .qrcodeclick span,
+      #settingslegacyprofileaddress #memberlegacyformatdiv .qrcodeclick span,
+      #settingsprivatekey #cashaddrformatdiv .qrcodeclick span,
+      #settingsprivatekey #legacyformatdiv .qrcodeclick span,
+      #settingsprivatekey #privatekeyformatdiv .qrcodeclick span,
+      #settingsprivatekey #membercashaddrformatdiv .qrcodeclick span,
+      #settingsprivatekey #memberlegacyformatdiv .qrcodeclick span,
+      #membercashaddress #cashaddrformatdiv .qrcodeclick span,
+      #membercashaddress #legacyformatdiv .qrcodeclick span,
+      #membercashaddress #privatekeyformatdiv .qrcodeclick span,
+      #membercashaddress #membercashaddrformatdiv .qrcodeclick span,
+      #membercashaddress #memberlegacyformatdiv .qrcodeclick span,
+      #memberlegacyaddress #cashaddrformatdiv .qrcodeclick span,
+      #memberlegacyaddress #legacyformatdiv .qrcodeclick span,
+      #memberlegacyaddress #privatekeyformatdiv .qrcodeclick span,
+      #memberlegacyaddress #membercashaddrformatdiv .qrcodeclick span,
+      #memberlegacyaddress #memberlegacyformatdiv .qrcodeclick span {
+        margin-bottom: 0; }
     #settingsprofileaddress #cashaddrformatdiv img,
     #settingsprofileaddress #legacyformatdiv img,
     #settingsprofileaddress #privatekeyformatdiv img,
@@ -1874,9 +1873,6 @@ footer {
       margin: 0 auto;
       margin-bottom: 0.5rem;
       display: table; }
-      #lowfundswarning .content .lowfundsaddressdiv img {
-        height: 160px;
-        width: 160px; }
     #lowfundswarning .content a:not([rel~="noreferrer"]) {
       line-height: 1.2;
       font-weight: 400;

@@ -124,6 +124,9 @@ html {
       &:hover {
         color: darken($theme-secondary, 10);
       }
+      span{
+        margin-bottom:0;
+      }
     }
 
     img {
