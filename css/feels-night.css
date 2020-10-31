@@ -683,6 +683,13 @@ a {
   padding: 0px;
   margin: 0.25rem; }
 
+.repostnoquote .quotepost {
+  border: 0;
+  border-radius: 0;
+  overflow: hidden;
+  padding: 0px;
+  margin: 0; }
+
 [id^=replycompletedthread] {
   text-align: center; }
 
@@ -1282,14 +1289,23 @@ video {
     display: inline-block; }
   .postdetails .subtextbuttons .rememberscounttext,
   .comment-tree ul li .reply div .subtextbuttons .rememberscounttext {
-    margin-right: 0.25rem; }
-    .postdetails .subtextbuttons .rememberscounttext a.remebersinactive::before,
-    .postdetails .subtextbuttons .rememberscounttext a.remebersactive::before,
-    .comment-tree ul li .reply div .subtextbuttons .rememberscounttext a.remebersinactive::before,
-    .comment-tree ul li .reply div .subtextbuttons .rememberscounttext a.remebersactive::before {
-      background: url(../img/feelstheme/re-member.svg);
-      background-size: 0.875rem 0.875rem;
-      display: inline-block; }
+    margin-right: 0.25rem;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row; }
+    .postdetails .subtextbuttons .rememberscounttext a.remebersinactive,
+    .postdetails .subtextbuttons .rememberscounttext a.remebersactive,
+    .comment-tree ul li .reply div .subtextbuttons .rememberscounttext a.remebersinactive,
+    .comment-tree ul li .reply div .subtextbuttons .rememberscounttext a.remebersactive {
+      margin-right: 0; }
+      .postdetails .subtextbuttons .rememberscounttext a.remebersinactive::before,
+      .postdetails .subtextbuttons .rememberscounttext a.remebersactive::before,
+      .comment-tree ul li .reply div .subtextbuttons .rememberscounttext a.remebersinactive::before,
+      .comment-tree ul li .reply div .subtextbuttons .rememberscounttext a.remebersactive::before {
+        background: url(../img/feelstheme/re-member.svg);
+        background-size: 0.875rem 0.875rem;
+        display: inline-block; }
     .postdetails .subtextbuttons .rememberscounttext a.remebersinactive,
     .comment-tree ul li .reply div .subtextbuttons .rememberscounttext a.remebersinactive {
       color: #2291EB; }

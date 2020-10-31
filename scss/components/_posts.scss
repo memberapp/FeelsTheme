@@ -351,9 +351,12 @@ video{
 
   .rememberscounttext {
     margin-right: 0.25rem;
-
+    display: flex;
+    flex-direction: row;
+ 
     a.remebersinactive,
     a.remebersactive {
+      margin-right: 0;
       &::before {
         background: url(../img/feelstheme/re-member.svg);
         background-size: $arrow-size $arrow-size;

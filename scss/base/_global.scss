@@ -169,7 +169,16 @@ a{
   overflow: hidden;
   padding: 0px;
   margin: 0.25rem;
+}
 
+.repostnoquote{
+  .quotepost{
+    border: 0;
+    border-radius: 0;
+    overflow: hidden;
+    padding: 0px;
+    margin: 0;
+  }
 }
 
 
