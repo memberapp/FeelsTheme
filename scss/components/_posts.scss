@@ -315,7 +315,7 @@ video{
     }
   }
 
-  span.score {
+  span.score, span.rememberscounttext {
     margin-right: 0.725rem;
     cursor: pointer;
     transition: filter 1s ease-in-out;

@@ -1265,18 +1265,22 @@ video {
     .postdetails .subtextbuttons a:hover,
     .comment-tree ul li .reply div .subtextbuttons a:hover {
       color: rgba(0, 0, 0, 0.87); }
-  .postdetails .subtextbuttons span.score,
-  .comment-tree ul li .reply div .subtextbuttons span.score {
+  .postdetails .subtextbuttons span.score, .postdetails .subtextbuttons span.rememberscounttext,
+  .comment-tree ul li .reply div .subtextbuttons span.score,
+  .comment-tree ul li .reply div .subtextbuttons span.rememberscounttext {
     margin-right: 0.725rem;
     cursor: pointer;
     transition: filter 1s ease-in-out; }
-    .postdetails .subtextbuttons span.score:hover,
-    .comment-tree ul li .reply div .subtextbuttons span.score:hover {
+    .postdetails .subtextbuttons span.score:hover, .postdetails .subtextbuttons span.rememberscounttext:hover,
+    .comment-tree ul li .reply div .subtextbuttons span.score:hover,
+    .comment-tree ul li .reply div .subtextbuttons span.rememberscounttext:hover {
       transition: filter 1s ease-in-out;
       color: rgba(0, 0, 0, 0.87); }
-    .postdetails .subtextbuttons span.score .likescounttext, .postdetails .subtextbuttons span.score .tipscounttext,
+    .postdetails .subtextbuttons span.score .likescounttext, .postdetails .subtextbuttons span.score .tipscounttext, .postdetails .subtextbuttons span.rememberscounttext .likescounttext, .postdetails .subtextbuttons span.rememberscounttext .tipscounttext,
     .comment-tree ul li .reply div .subtextbuttons span.score .likescounttext,
-    .comment-tree ul li .reply div .subtextbuttons span.score .tipscounttext {
+    .comment-tree ul li .reply div .subtextbuttons span.score .tipscounttext,
+    .comment-tree ul li .reply div .subtextbuttons span.rememberscounttext .likescounttext,
+    .comment-tree ul li .reply div .subtextbuttons span.rememberscounttext .tipscounttext {
       margin-right: 0.25rem; }
   .postdetails .subtextbuttons [id^="permalinkposts"]::before,
   .postdetails .subtextbuttons [id^="permalinkthread"]::before,
@@ -1996,14 +2000,14 @@ footer {
       .profilepreview .profile-actions .profilepreviewfollowbutton a:disabled {
         opacity: 0.65; }
 
-.scoreexpanded {
+.scoreexpanded, .remembersexpanded {
   padding: 1rem 0;
   display: none; }
-  .scoreexpanded .closebutton {
+  .scoreexpanded .closebutton, .remembersexpanded .closebutton {
     display: -ms-flexbox;
     display: flex;
     margin-left: auto; }
-    .scoreexpanded .closebutton a {
+    .scoreexpanded .closebutton a, .remembersexpanded .closebutton a {
       line-height: 1.2;
       font-weight: 400;
       cursor: pointer;
@@ -2018,22 +2022,22 @@ footer {
       color: #CC2936;
       border: 1px solid #CC2936;
       margin-left: auto !important; }
-      .scoreexpanded .closebutton a:hover {
+      .scoreexpanded .closebutton a:hover, .remembersexpanded .closebutton a:hover {
         background: #61aff0; }
-      .scoreexpanded .closebutton a:disabled {
+      .scoreexpanded .closebutton a:disabled, .remembersexpanded .closebutton a:disabled {
         opacity: 0.65;
         cursor: not-allowed;
         pointer-events: none; }
-      .scoreexpanded .closebutton a:hover {
+      .scoreexpanded .closebutton a:hover, .remembersexpanded .closebutton a:hover {
         background: #fdf7f7; }
-  .scoreexpanded .tipdetails {
+  .scoreexpanded .tipdetails, .scoreexpanded .rememberdetails, .remembersexpanded .tipdetails, .remembersexpanded .rememberdetails {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
     align-items: center;
     border-bottom: 1px solid rgba(0, 0, 0, 0.12);
-    margin: 0.5rem 0; }
-    .scoreexpanded .tipdetails .sats {
+    padding: 0.5rem 0; }
+    .scoreexpanded .tipdetails .sats, .scoreexpanded .tipdetails .flair, .scoreexpanded .rememberdetails .sats, .scoreexpanded .rememberdetails .flair, .remembersexpanded .tipdetails .sats, .remembersexpanded .tipdetails .flair, .remembersexpanded .rememberdetails .sats, .remembersexpanded .rememberdetails .flair {
       margin-right: 0.25rem; }
 
 .CodeMirror {
