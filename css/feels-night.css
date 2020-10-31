@@ -366,8 +366,8 @@ img {
   border-radius: 0.5rem; }
 
 .memberpicsmall {
-  display: -ms-flexbox !important;
-  display: flex !important;
+  display: -ms-grid !important;
+  display: grid !important;
   -ms-flex-align: center !important;
   align-items: center !important;
   margin-right: 0.25rem;
