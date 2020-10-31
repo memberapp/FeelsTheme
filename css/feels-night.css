@@ -1228,6 +1228,8 @@ video {
         flex-wrap: wrap; }
         .post .postdetails .subtext .submitter a {
           display: inline-block; }
+        .post .postdetails .subtext .submitter .topic {
+          margin-left: 0.5rem; }
 
 .postdetails .subtextbuttons,
 .comment-tree ul li .reply div .subtextbuttons {
