@@ -27,15 +27,20 @@ footer {
   }
 
   .footerlinks {
-
+    text-transform: capitalize;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    color: $text-secondary;
 
     .separatorwide {
       border-right: 1px solid $text-divider;
       margin-right: 1rem;
       padding-right: 1rem;
+    }
+
+    #version{
+      margin-left: 0.25rem;
     }
 
     a,

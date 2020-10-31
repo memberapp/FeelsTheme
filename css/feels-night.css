@@ -1786,16 +1786,20 @@ footer {
   footer hr {
     display: none; }
   footer .footerlinks {
+    text-transform: capitalize;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
     justify-content: center;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    color: rgba(255, 255, 255, 0.8); }
     footer .footerlinks .separatorwide {
       border-right: 1px solid rgba(255, 255, 255, 0.38);
       margin-right: 1rem;
       padding-right: 1rem; }
+    footer .footerlinks #version {
+      margin-left: 0.25rem; }
     footer .footerlinks a,
     footer .footerlinks .vavilon {
       color: rgba(255, 255, 255, 0.8); }
