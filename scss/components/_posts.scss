@@ -46,6 +46,8 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-bottom-left-radius: 0.2rem;
+  border-top-left-radius: 0.2rem;
 
   span {
     text-align: center;

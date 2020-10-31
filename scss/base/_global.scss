@@ -167,10 +167,12 @@ a{
 
 
 .quotepost{
-  border: 1px solid $text-hint;
-  border-radius: 10px;
+  border: 1px solid $text-divider;
+  border-radius: 0.25rem;
   padding: 0px;
-  margin: 0.25rem;
+  margin: 1.5rem;
+  border-bottom-left-radius: 0.2rem;
+  border-top-left-radius: 0.2rem;
 }
 
 .repostnoquote{
