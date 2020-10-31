@@ -1247,7 +1247,8 @@ video {
     display: flex;
     margin-right: 0.725rem;
     transition: all 0.15s ease-in-out;
-    color: rgba(255, 255, 255, 0.8); }
+    color: rgba(255, 255, 255, 0.8);
+    white-space: break-spaces; }
     .postdetails .subtextbuttons a::before,
     .comment-tree ul li .reply div .subtextbuttons a::before {
       width: 0.875rem;

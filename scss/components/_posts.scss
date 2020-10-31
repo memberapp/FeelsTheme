@@ -282,6 +282,7 @@ video{
     margin-right: 0.725rem;
     transition: all 0.15s ease-in-out;
     color: $text-secondary;
+    white-space: break-spaces;
 
 
     &:last-of-type {
