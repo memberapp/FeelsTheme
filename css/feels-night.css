@@ -2507,30 +2507,36 @@ body.article {
   @media (max-width: 768px) {
     #topiclistanchor {
       max-width: 540px; } }
-  #topiclistanchor br {
-    display: none; }
-  #topiclistanchor table {
+  #topiclistanchor .content {
     background: black;
     border: 1px solid rgba(255, 255, 255, 0.38);
     border-radius: 0.25rem;
     margin-bottom: 1.5rem;
     list-style-type: none;
     overflow: inherit;
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-    width: 100%;
-    padding: 1.75rem; }
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
     @media (max-width: 400px) {
-      #topiclistanchor table {
+      #topiclistanchor .content {
         margin-left: -15px !important;
         margin-right: -15px !important;
         border-radius: 0;
         border-left: 0;
         border-right: 0;
         border-bottom: 1px solid rgba(255, 255, 255, 0.38); } }
+  #topiclistanchor br {
+    display: none; }
+  #topiclistanchor .topicheader {
+    display: none; }
+  #topiclistanchor table {
+    width: 100%;
+    margin-bottom: 0;
+    padding: 1.75rem; }
     @media (max-width: 399px) {
       #topiclistanchor table td.tltopicname {
         max-width: 200px;
-        white-space: pre-wrap; } }
+        white-space: pre-wrap; }
+      #topiclistanchor table .tlmessagescount, #topiclistanchor table .tlsubscount, #topiclistanchor table .tlmessagecount {
+        display: none; } }
     #topiclistanchor table .tltopicname {
       text-align: left; }
 

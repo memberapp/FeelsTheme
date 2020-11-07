@@ -4,15 +4,24 @@
   overflow-x: auto;
   white-space: nowrap;
 
+  .content{
+    @include card;
+  }
+
   br {
+    display: none;
+  }
+
+  .topicheader{
     display: none;
   }
 
 
 
   table {
-    @include card;
+    // @include card;
     width: 100%;
+    margin-bottom: 0;
     padding: $base-padding * 2;
 
 
@@ -22,6 +31,12 @@
         max-width: 200px;
         white-space: pre-wrap;
       }
+
+      .tlmessagescount, .tlsubscount, .tlmessagecount{
+        display: none;
+      }
+
+
     }
 
     .tltopicname {
