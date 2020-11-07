@@ -682,12 +682,19 @@ a {
   margin: 1.5rem;
   border-bottom-left-radius: 0.2rem;
   border-top-left-radius: 0.2rem; }
+  @media (max-width: 399px) {
+    .quotepost {
+      margin: 0.5rem;
+      margin-bottom: 1rem; } }
 
 .repostnoquote .quotepost {
   border: 0;
   border-radius: 0;
   padding: 0px;
   margin: 0; }
+
+.repostnoquote .repost {
+  padding: 0.5rem; }
 
 [id^=replycompletedthread] {
   text-align: center; }

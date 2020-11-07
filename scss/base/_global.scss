@@ -173,6 +173,13 @@ a{
   margin: 1.5rem;
   border-bottom-left-radius: 0.2rem;
   border-top-left-radius: 0.2rem;
+
+
+  @include media("<phone") {
+    margin: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
 }
 
 .repostnoquote{
@@ -181,6 +188,9 @@ a{
     border-radius: 0;
     padding: 0px;
     margin: 0;
+  }
+  .repost{
+    padding: 0.5rem;
   }
 }
 
