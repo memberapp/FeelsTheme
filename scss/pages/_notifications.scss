@@ -56,10 +56,15 @@
         //   white-space: nowrap;
         // }
       }
+      &.highlighted{
+
+        .notificationtitle{
+          background-color: $highlight-color;
+        }
+       
+      }
     }
   }
 
-  .highlighted{
-    background-color: $highlight-color;
-  }
+ 
 }

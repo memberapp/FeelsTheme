@@ -3185,8 +3185,8 @@ tbody tr td .filterprovider {
         box-shadow: 0 1px 3px rgba(255, 255, 255, 0.38), 0 1px 2px rgba(0, 0, 0, 0.24); }
       #notifications ul.notificationslist li hr.notificationhr {
         display: none; }
-  #notifications .highlighted {
-    background-color: rgba(255, 255, 255, 0.38); }
+      #notifications ul.notificationslist li.highlighted .notificationtitle {
+        background-color: rgba(255, 255, 255, 0.38); }
 
 #blockers,
 #blocking,
