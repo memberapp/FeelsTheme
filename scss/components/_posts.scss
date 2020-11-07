@@ -361,8 +361,7 @@ video{
     display: flex;
     flex-direction: row;
  
-    a.remebersinactive,
-    a.remebersactive {
+    a.remembersactive {
       margin-right: 0;
       &::before {
         background: url(../img/feelstheme/re-member.svg);
@@ -371,7 +370,7 @@ video{
       }
     }
 
-    a.remebersinactive {
+    a.remembersinactive {
       color: $theme-primary;
 
       &::before {

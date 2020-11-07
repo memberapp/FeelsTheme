@@ -1302,23 +1302,19 @@ video {
     display: flex;
     -ms-flex-direction: row;
     flex-direction: row; }
-    .postdetails .subtextbuttons .rememberscounttext a.remebersinactive,
-    .postdetails .subtextbuttons .rememberscounttext a.remebersactive,
-    .comment-tree ul li .reply div .subtextbuttons .rememberscounttext a.remebersinactive,
-    .comment-tree ul li .reply div .subtextbuttons .rememberscounttext a.remebersactive {
+    .postdetails .subtextbuttons .rememberscounttext a.remembersactive,
+    .comment-tree ul li .reply div .subtextbuttons .rememberscounttext a.remembersactive {
       margin-right: 0; }
-      .postdetails .subtextbuttons .rememberscounttext a.remebersinactive::before,
-      .postdetails .subtextbuttons .rememberscounttext a.remebersactive::before,
-      .comment-tree ul li .reply div .subtextbuttons .rememberscounttext a.remebersinactive::before,
-      .comment-tree ul li .reply div .subtextbuttons .rememberscounttext a.remebersactive::before {
+      .postdetails .subtextbuttons .rememberscounttext a.remembersactive::before,
+      .comment-tree ul li .reply div .subtextbuttons .rememberscounttext a.remembersactive::before {
         background: url(../img/feelstheme/re-member.svg);
         background-size: 0.875rem 0.875rem;
         display: inline-block; }
-    .postdetails .subtextbuttons .rememberscounttext a.remebersinactive,
-    .comment-tree ul li .reply div .subtextbuttons .rememberscounttext a.remebersinactive {
+    .postdetails .subtextbuttons .rememberscounttext a.remembersinactive,
+    .comment-tree ul li .reply div .subtextbuttons .rememberscounttext a.remembersinactive {
       color: #2291EB; }
-      .postdetails .subtextbuttons .rememberscounttext a.remebersinactive::before,
-      .comment-tree ul li .reply div .subtextbuttons .rememberscounttext a.remebersinactive::before {
+      .postdetails .subtextbuttons .rememberscounttext a.remembersinactive::before,
+      .comment-tree ul li .reply div .subtextbuttons .rememberscounttext a.remembersinactive::before {
         fill: #2291EB; }
     .postdetails .subtextbuttons .rememberscounttext .repostscount,
     .comment-tree ul li .reply div .subtextbuttons .rememberscounttext .repostscount {
