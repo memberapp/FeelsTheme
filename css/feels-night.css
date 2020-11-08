@@ -400,6 +400,9 @@ img {
     .member-pagingid {
       max-width: 200px; } }
 
+.post-body {
+  word-break: break-word; }
+
 body {
   background: #1F1F1F;
   position: relative;

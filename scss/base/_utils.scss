@@ -109,6 +109,7 @@ img {
 }
 
 
+
 .memberpicturelarge,
 .settingspicturelarge {
   height: 320px;
@@ -133,4 +134,8 @@ img {
     max-width: 200px;
   }
 
+}
+
+.post-body{
+  word-break: break-word;
 }
