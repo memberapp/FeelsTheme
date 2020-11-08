@@ -2538,7 +2538,7 @@ body.article {
     width: 100%;
     margin-bottom: 0;
     padding: 1.75rem; }
-    @media (max-width: 399px) {
+    @media (max-width: 767px) {
       #topiclistanchor table td.tltopicname {
         max-width: 200px;
         white-space: pre-wrap; }
