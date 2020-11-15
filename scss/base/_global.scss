@@ -170,7 +170,8 @@ a{
   border: 1px solid $text-divider;
   border-radius: 0.25rem;
   padding: 0px;
-  margin: 1.5rem;
+  margin: 0rem;
+  margin-bottom: 1rem;
   border-bottom-left-radius: 0.2rem;
   border-top-left-radius: 0.2rem;
 
@@ -189,8 +190,12 @@ a{
     padding: 0px;
     margin: 0;
   }
+  .memberpicturesmall {
+    height: 1rem;
+    width: 1rem;
+} 
   .repost{
-    padding: 0.5rem;
+    padding: 0.3rem
   }
 }
 

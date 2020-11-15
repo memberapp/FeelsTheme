@@ -13,7 +13,9 @@
         display: inline-block;
       }
     }
-
+    #languageselector {
+      width: 100%;
+  }
     #settingsnametextbutton,
     #settingsprofiletextbutton {
       @include btn-outline;
