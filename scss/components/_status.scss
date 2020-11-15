@@ -12,7 +12,7 @@ div#status {
   padding: 0.25rem 1rem;
 
   font-weight: normal;
-  text-transform: capitalize;
+  // text-transform: capitalize;
   text-align: center;
 
   @include media(">desktop") {

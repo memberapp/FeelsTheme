@@ -467,7 +467,6 @@ html :lang(ar) {
   text-decoration: none;
   transition: all 0.15s ease-in-out;
   color: #1063A8;
-  text-transform: uppercase;
   border-radius: 0.25rem;
   border: 1px solid #1063A8;
   background: transparent;
@@ -822,7 +821,6 @@ button {
   transition: all 0.15s ease-in-out;
   color: white;
   float: right;
-  text-transform: uppercase;
   border-radius: 0.25rem;
   border: 1px solid #1063A8;
   background: #1063A8;
@@ -843,7 +841,6 @@ button {
 label {
   font-weight: bold;
   margin-bottom: 0.25rem;
-  text-transform: capitalize;
   display: block; }
 
 textarea,
@@ -1548,7 +1545,6 @@ div#status {
   font-size: 0.75rem;
   padding: 0.25rem 1rem;
   font-weight: normal;
-  text-transform: capitalize;
   text-align: center; }
   @media (min-width: 1025px) {
     div#status {
@@ -1713,7 +1709,6 @@ header {
           height: 100%;
           -ms-flex-align: center;
           align-items: center;
-          text-transform: capitalize;
           -ms-flex-negative: 0;
           flex-shrink: 0; }
         header .pagetop nav .navitemsmain .headerbuttons {
@@ -1809,7 +1804,6 @@ footer {
   footer hr {
     display: none; }
   footer .footerlinks {
-    text-transform: capitalize;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
@@ -1902,7 +1896,6 @@ footer {
       text-decoration: none;
       transition: all 0.15s ease-in-out;
       color: #1063A8;
-      text-transform: uppercase;
       border-radius: 0.25rem;
       border: 1px solid #1063A8;
       background: transparent;
@@ -2002,7 +1995,6 @@ footer {
       transition: all 0.15s ease-in-out;
       color: white;
       float: right;
-      text-transform: uppercase;
       border-radius: 0.25rem;
       border: 1px solid #1063A8;
       background: #1063A8;
@@ -2031,7 +2023,6 @@ footer {
       text-decoration: none;
       transition: all 0.15s ease-in-out;
       color: #1063A8;
-      text-transform: uppercase;
       border-radius: 0.25rem;
       border: 1px solid #1063A8;
       background: transparent;
@@ -2200,8 +2191,7 @@ footer {
         -ms-flex-pack: justify;
         justify-content: space-between;
         -ms-flex-align: center;
-        align-items: center;
-        text-transform: capitalize; }
+        align-items: center; }
         #newpost #memorandumarea #memorandumtopicarea label span {
           font-size: 0.875rem;
           color: rgba(0, 0, 0, 0.54);
@@ -2212,7 +2202,6 @@ footer {
       margin-bottom: 0.875rem;
       display: -ms-flexbox;
       display: flex;
-      text-transform: capitalize;
       -ms-flex-direction: column;
       flex-direction: column; }
       #newpost #memorandumarea .titlecontainer label {
@@ -2221,8 +2210,7 @@ footer {
         -ms-flex-pack: justify;
         justify-content: space-between;
         -ms-flex-align: center;
-        align-items: center;
-        text-transform: capitalize; }
+        align-items: center; }
         #newpost #memorandumarea .titlecontainer label span:last-of-type {
           font-size: 0.875rem;
           color: rgba(0, 0, 0, 0.54);
@@ -2245,7 +2233,6 @@ footer {
         border: 1px solid;
         border-radius: 0.25rem;
         font-weight: bold;
-        text-transform: capitalize;
         padding: 0.5rem 1.5rem;
         width: 100%;
         text-align: center;
@@ -2302,7 +2289,6 @@ footer {
       text-decoration: none;
       transition: all 0.15s ease-in-out;
       color: #1063A8;
-      text-transform: uppercase;
       border-radius: 0.25rem;
       border: 1px solid #1063A8;
       background: transparent;
@@ -2324,7 +2310,6 @@ footer {
       text-decoration: none;
       transition: all 0.15s ease-in-out;
       color: #1063A8;
-      text-transform: uppercase;
       border-radius: 0.25rem;
       border: 1px solid #1063A8;
       background: transparent;
@@ -2596,7 +2581,6 @@ tbody tr td a[href^="javascript:;"] {
   transition: all 0.15s ease-in-out;
   color: white;
   float: right;
-  text-transform: uppercase;
   border-radius: 0.25rem;
   border: 1px solid #1063A8;
   background: #1063A8;
@@ -2701,7 +2685,6 @@ tbody tr td .filterprovider {
           text-decoration: none;
           transition: all 0.15s ease-in-out;
           color: #1063A8;
-          text-transform: uppercase;
           border-radius: 0.25rem;
           border: 1px solid #1063A8;
           background: transparent;
@@ -2806,7 +2789,6 @@ tbody tr td .filterprovider {
           text-decoration: none;
           transition: all 0.15s ease-in-out;
           color: #1063A8;
-          text-transform: uppercase;
           border-radius: 0.25rem;
           border: 1px solid #1063A8;
           background: transparent;
@@ -2836,7 +2818,6 @@ tbody tr td .filterprovider {
           text-decoration: none;
           transition: all 0.15s ease-in-out;
           color: #1063A8;
-          text-transform: uppercase;
           border-radius: 0.25rem;
           border: 1px solid #1063A8;
           background: transparent;
@@ -2895,7 +2876,6 @@ tbody tr td .filterprovider {
         transition: all 0.15s ease-in-out;
         color: white;
         float: right;
-        text-transform: uppercase;
         border-radius: 0.25rem;
         border: 1px solid #1063A8;
         background: #1063A8;
@@ -3168,7 +3148,6 @@ tbody tr td .filterprovider {
         text-decoration: none;
         transition: all 0.15s ease-in-out;
         color: #1063A8;
-        text-transform: uppercase;
         border-radius: 0.25rem;
         border: 1px solid #1063A8;
         background: transparent;
