@@ -69,7 +69,7 @@ pre {
   overflow: auto;
   font-size: 85%;
   line-height: 1.45;
-  background-color: #f6f8fa;
+  background-color: $text-divider; //#f6f8fa; 
   border-radius: 6px;
   font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
   white-space: break-spaces;
